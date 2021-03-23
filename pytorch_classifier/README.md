@@ -103,7 +103,7 @@ packages.
 
 2. Now we can create our new enviroment with this command.
 ```
-conda create -n pytorch_classifier pytorch torchvision matplotlib requests ipykernel cudatoolkit=10.2 -c pytorch
+conda create -n pytorch_classifier pytorch torchvision matplotlib requests cudatoolkit=10.2 -c pytorch
 ```
 
 3. We are now able to activate our enviroment with 
@@ -126,8 +126,9 @@ conda env remove -n pytorch_classifier
 ## Module Setup
 
 In order to take full advantage of this example, it is suggested to use a
-developer node with GPU access (`dev-intel14-k20`, `dev-intel16-k80`,
-`dev-amd20-v100`).
+developer node with GPU access (`dev-intel16-k80`,
+`dev-amd20-v100` ---- Note that `dev-intel14-k20` does not work with this
+example).
 
 If Anaconda 3 is installed with the appropiate package and enviroment from above.
 We can load Anaconda 3 with `pytorch_classifier` enviroment as
