@@ -1,3 +1,6 @@
 /**/.ipynb_checkpoints
 /**/__pyache__
 *~
+/pytorch_classifier/data
+/pytorch_classifier/cifar_net.pth
+/pytorch_classifier/*.png
