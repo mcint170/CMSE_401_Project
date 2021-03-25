@@ -14,7 +14,8 @@ for audio, [`torchtext`](https://pytorch.org/text/stable/index.html) for text,
 [`torchvision`](https://pytorch.org/vision/stable/index.html) for computer vision, 
 [`TorchElastic`](https://pytorch.org/elastic/0.2.1/index.html) for running on 
 changing environments, [`TorchServe`](https://pytorch.org/serve/) for serving 
-`PyTorch` models. 
+`PyTorch` models. This package is great for projects that require large amounts
+of computation through neural networks, such as neural networks that take in images. 
 
 ## ANACONDA SET UP:
 
@@ -169,9 +170,12 @@ module load CUDA/10.2.89
 
 ## Running the Code
 
+The code comes from [this tutorial](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py)
+I simply just combined it into one script and implemented GPU usage.
+
 To run the code is simple. I have included a makefile to streamline the process.
 
-In order to start the program simplay run
+In order to start the program simply run
 ```
 make
 ```
@@ -179,4 +183,29 @@ make
 This should autodetect if you are on a node with GPU and run the appropiate
 version of the code.
 
-Note this will create some files.
+The code will train a deep neural network with 10000 images.
+The network will then be tested with 10000 images.
+The results of the classification are then printed at the end.
+
+The program will produce the following:
+ * `/data` --  folder containing data for training and testing model
+ * `training.png` -- Sample grid of training images
+ * `testing.png` -- Sample grid of testing images 
+ * `cifar_net.pth` -- Trained Neural Network 
+
+These files can easily be deleted with this command
+```
+make clean
+```
+
+This concludes this README, below is references
+
+# References
+
+Code:  
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py  
+
+Conda Enviroments:  
+https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533#e814
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment
+
