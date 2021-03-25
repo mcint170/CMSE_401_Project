@@ -11,10 +11,6 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 
-# Load Visualization Packages
-import matplotlib.pyplot as plt
-import numpy as np
-
 # Load Neural Network Packages
 import torch.nn as nn
 import torch.nn.functional as F
@@ -68,11 +64,11 @@ if __name__ == "__main__":
     trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                             download=True, transform=transform)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
-                                              shuffle=True, num_workers=2)
+                                              shuffle=True, num_workers=1)
     testset = torchvision.datasets.CIFAR10(root='./data', train=False,
                                            download=True, transform=transform)
     testloader = torch.utils.data.DataLoader(testset, batch_size=4,
-                                             shuffle=False, num_workers=2)
+                                             shuffle=False, num_workers=1)
 
     # Create list of possible classifications
     classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 
@@ -184,13 +180,4 @@ if __name__ == "__main__":
     for i in range(10):
         print('Accuracy of %5s : %2d %%' % (
               classes[i], 100 * class_correct[i] / class_total[i]))
-
-    
-
-
-
-
-
-
-
 

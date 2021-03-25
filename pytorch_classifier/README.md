@@ -1,7 +1,20 @@
 # PyTorch Classification Example
 
-PyTorch is a python package that specializes in tensor computation and
-construction of Neural Networks.
+[`PyTorch`](https://pytorch.org/) is a popular software/package for 
+tensor computation and construction of Neural Networks. It is a pacakge for python, 
+as well as C++. The software is also
+[open source](https://github.com/pytorch/pytorch) and has a rich community 
+that has a plethora of tutorials on how to use many of the features. One of 
+`PyTorch`'s strengths is that it can utilize GPUs to perform calculations. 
+This allows for significant speed up in training and computation. One thing 
+that is interesting is the code is "not a Python binding into a monolithic 
+C++ framework. It is built to be deeply integrated into Python." `PyTorch` 
+also has many libraries such as [`torchaudio`](https://pytorch.org/audio/stable/index.html) 
+for audio, [`torchtext`](https://pytorch.org/text/stable/index.html) for text, 
+[`torchvision`](https://pytorch.org/vision/stable/index.html) for computer vision, 
+[`TorchElastic`](https://pytorch.org/elastic/0.2.1/index.html) for running on 
+changing environments, [`TorchServe`](https://pytorch.org/serve/) for serving 
+`PyTorch` models. 
 
 ## ANACONDA SET UP:
 
@@ -10,12 +23,13 @@ version 3.6 or higer is used. With using Anaconda, since many python pacakges
 are already installed and conda is pre-installed, the setup will be less intensive.
 
 If you already have Anaconda 3 with python version 3.6 or higher, you can skip
-to Kernel Setup section if you would like to keep any installations
+to Virtual Enviroment Setup.
 
 Below are instructions on how to install Anaconda 3 with python version 3.8 on
 the HPCC. We will also set up a new virtual enviroment with the packages we 
 will need to install to get our example working. Please note this would probably
-work best if you can keep this README.md open and also have access to a terminal.
+work best if you can keep this README.md open and also have access to a terminal
+in another window.
 
 ### INSTALL Anaconda 3 w/ Python 3.8:
 
@@ -70,7 +84,17 @@ conda --version
 
 ### Virtual Enviroment Setup: 
 
-There are two routes to go here. Either you can load the enviroment included
+From the last section, make sure you Anaconda 3 is active. If you followed the
+process above this was done with 
+
+```
+module load Anaconda/3
+conda --version
+```
+
+If a version number was given you are good to go.
+
+There are two routes to go from here. Either you can load the enviroment included
 or you can create a new enviroment
 
 **Load the Enviroment from yml**
@@ -103,7 +127,7 @@ packages.
 
 2. Now we can create our new enviroment with this command.
 ```
-conda create -n pytorch_classifier pytorch torchvision matplotlib requests cudatoolkit=10.2 -c pytorch
+conda create -n pytorch_classifier pytorch torchvision requests cudatoolkit=10.2 -c pytorch
 ```
 
 3. We are now able to activate our enviroment with 
@@ -145,4 +169,14 @@ module load CUDA/10.2.89
 
 ## Running the Code
 
+To run the code is simple. I have included a makefile to streamline the process.
 
+In order to start the program simplay run
+```
+make
+```
+
+This should autodetect if you are on a node with GPU and run the appropiate
+version of the code.
+
+Note this will create some files.
