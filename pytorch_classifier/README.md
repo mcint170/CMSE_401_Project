@@ -198,6 +198,11 @@ These files can easily be deleted with this command
 make clean
 ```
 
+If you would like to run this as a HPCC job, you can use the command
+```
+sbatch classifier.sb
+```
+
 This concludes this README, below is references
 
 # References
