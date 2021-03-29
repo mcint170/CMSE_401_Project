@@ -42,13 +42,15 @@ make sure to change the bash command to run the appropiate script.
 1. In your home directory (~), or wherever you would like,
 you will want to download the installation script from Anaconda's website. 
 This can easily be done with this command.
-```
+
+```bash
 curl -O https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 ```
 
 2. Next we need to run the installation script. To do this makes sure you are
 in the same directory as the file we just downloaded. Then run the following.
-```
+
+```bash
 bash Anaconda3-2020.11-Linux-x86_64.sh
 ```
 
@@ -73,13 +75,15 @@ you can say "yes" to this.
 wherever you would like.
 
 9. Now you can load in Anaconda 3 with the following command.
-```
+
+```bash
 module load Anaconda/3
 ```
 
 10. You can test that the installation worked properly if the follwing command 
 returns `conda 4.9.2` or something equivalent.
-```
+
+```bash
 conda --version
 ```
 
@@ -88,7 +92,7 @@ conda --version
 From the last section, make sure you Anaconda 3 is active. If you followed the
 process above this was done with 
 
-```
+```bash
 module load Anaconda/3
 conda --version
 ```
@@ -107,12 +111,12 @@ run the code
 (`/pytorch_classifier`).
 
 2. You can create the enviroment from the `pytorch_classifier.yml` file with
-```
+```bash
 conda env create -f pytorch_classifier.yml
 ```
 
 3. To activate the enviroment we can use
-```
+```bash
 conda activate pytorch_classifier
 ```
 
@@ -127,24 +131,24 @@ packages.
 (`/pytorch_classifier`).
 
 2. Now we can create our new enviroment with this command.
-```
+```bash
 conda create -n pytorch_classifier pytorch torchvision requests cudatoolkit=10.2 -c pytorch
 ```
 
 3. We are now able to activate our enviroment with 
-```
+```bash
 conda activate pytorch_classifier
 ```
 
 **Notes**
 
 Note that when you are done and want to get out of this enviroment you can use
-```
+```bash
 conda deactivate
 ```
 
 Also if in the future you would like to delete the enviroment you can use
-```
+```bash
 conda env remove -n pytorch_classifier
 ```
 
@@ -157,13 +161,13 @@ example).
 
 If Anaconda 3 is installed with the appropiate package and enviroment from above.
 We can load Anaconda 3 with `pytorch_classifier` enviroment as
-```
+```bash
 module load Anaconda/3
 conda activate pytorch_classifier
 ```
 
 Next, we need to load the appropiate modules for use of CUDA
-```
+```bash
 module load GCC/8.3.0
 module load CUDA/10.2.89
 ```
@@ -213,4 +217,5 @@ https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-begi
 Conda Enviroments:  
 https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533#e814
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment
+
 
