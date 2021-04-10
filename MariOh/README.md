@@ -19,33 +19,44 @@ myself.
 PyTorch [official tutorial](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html) to build an AI-powered Mario.
 
 ## Set Up
-1. Install [conda](https://www.anaconda.com/products/individual)
+1. Have Anaconda 3 installed. If you do not have Anaconda installed, see the [README](../pytorch_classifier/README.md) file
+in `../pytorch_classifier` and follow the instructions under 
+**INSTALL Anaconda 3 w/ Python 3.8**. **(BM)**
+3. (If using instructions in Part 1, or do not have conda activated at startup)
+The module `Anaconda /3` will need to be loaded with
+```bash
+module load Anaconda/3
+```
+**(BM)**
 2. Install dependencies with `environment.yml`
-    ```
+    ```bash
     conda env create -f environment.yml
     ```
     Check the new environment *mario* is [created successfully](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
 3. Activate *mario* enviroment
-    ```
+    ```bash
     conda activate myenv
     ```
 
-## Running
-To start the **learning** process for Mario,
+
+## Running Mario
+To manually start the **learning** process for Mario we can run the following **(BM)**,
 ```
 python main.py
 ```
 This starts the *double Q-learning* and logs key training metrics to `checkpoints`. In addition, a copy of `MarioNet` and current exploration rate will be saved.
 
-GPU will automatically be used if available. Training time is around 80 hours on CPU and 20 hours on GPU.
+(NEED TO CHANGE)A single GPU will automatically be used if available. Training time is around 80 hours on CPU and 20 hours on 1 GPU.
 
-To **evaluate** a trained Mario,
+(NEED TO CHECK)To **evaluate** a trained Mario we can run,
 ```
 python replay.py
 ```
 This visualizes Mario playing the game in a window. Performance metrics will be logged to a new folder under `checkpoints`. Change the `load_dir`, e.g. `checkpoints/2020-06-06T22-00-00`, in `Mario.load()` to check a specific timestamp.
 
+## Running w/ HPCC (BM)
+We will be using the above commands (Setup, however, this will be wrapped into
 
 ## Project Structure
 **main.py**
