@@ -5,3 +5,4 @@
 /pytorch_classifier/cifar_net.pth
 /pytorch_classifier/*.png
 /pytorch_classifier/CUDA_test.py
+/MariOh/
