@@ -96,8 +96,13 @@ if __name__ == "__main__":
 
     print("\nTraining Network\n")
     
+    if len(sys.argv) > 1:
+        episodes = int(sys.argv[1])
+    else:
+        episodes = 2
+
     # Train the network for 2 eopchs
-    for epoch in range(2):  # loop over the dataset multiple times
+    for epoch in range(episodes):  # loop over the dataset multiple times
 
         running_loss = 0.0
         for i, data in enumerate(trainloader, 0):

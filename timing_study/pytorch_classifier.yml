@@ -1,8 +1,0 @@
-name: pytorch_classifier
-channels:
-  - defaults
-dependencies:
-  - pytorch
-  - cudatoolkit=10.2
-  - torchvision
-  - requests
