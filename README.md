@@ -2,14 +2,14 @@ Semester-long project focused on implementing software onto the HPCC and paralle
 
 This folder contains all of the contents for the project.
 
-The project I selected is to implement PyTorch on the HPCC, and Parallalize a Reinforcement Learning Algorithm, made with pytorch, that learns how to beat Super Mario Bros Level 1.
+The project I selected is to implement PyTorch on the HPCC, and Parallalize with multiple GPUs a Convolutional Neural Network, made with pytorch, that learns how to classify images from CIFAR 10 images.
 
-Project Proposal is located in MariOh_Proposal.ipynb
+Original (now outdated and not about this CNN) Project Proposal is located in Project_Proposal.ipynb
 
-A getexample-esque for PyTorch is located in the pytorch_classifier folder
+A getexample-esque for PyTorch and this CNN is located in the `pytorch_classifier/` folder
 
-The Mario Reinforcement Learning Code is located in MariOh
+The Parallalized CNN classifier code is located in `timing_study/`
 
-Please note that most of the code written and some documentation comes from these resources.
+Please note that the code used is based of the provided code in the following tutorial
 
-https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html https://github.com/yuansongFeng/MadMario/ https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py

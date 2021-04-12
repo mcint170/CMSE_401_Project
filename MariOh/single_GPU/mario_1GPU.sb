@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --qos=normal
+#SBATCH -n 1
+#SBATCH --time=48:00:00
+#SBATCH --gres=gpu:k80:1
+#SBATCH --mem=10G
+#SBATCH -o slurm.mario.1GPU.%j.out
+
+module load Anaconda/3
+#module load GCC/8.3.0
+#module load CUDA/10.2.89
+
+conda activate mario
+
+srun python main.py 40000
