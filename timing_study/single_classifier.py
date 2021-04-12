@@ -1,10 +1,13 @@
-#### INFO ####
+### INFO ####
 # Code comes from this tutorial
 # https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
 # Code was copied and modified to work on HPCC terminal
 ##############
 
 ## IMPORTS
+
+# Load utlity
+import sys
 
 # Load data loading/manipulating Packages
 import torch
@@ -30,9 +33,9 @@ class Net(nn.Module):
 
     def __init__(self):
         super(Net,self).__init__()
-        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.conv1 = nn.Conv2d(3, 64, 5)
         self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(6, 16, 5)
+        self.conv2 = nn.Conv2d(64, 16, 5)
         self.fc1 = nn.Linear(16 * 5 * 5, 120)
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
@@ -59,15 +62,22 @@ if __name__ == "__main__":
                                     transforms.Normalize((0.5,0.5,0.5),
                                                         (0.5,0.5,0.5))])
     print("\nLoading in Datasets\n")
+    
+    if len(sys.argv) > 1:
+        batch_size = int(sys.argv[1])
+    else:
+        batch_size=120
+
+    print("Batch Size: {}".format(batch_size))
 
     # Load in datasets and loaders
     trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
                                             download=True, transform=transform)
-    trainloader = torch.utils.data.DataLoader(trainset, batch_size=8,
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
                                               shuffle=True, num_workers=1)
     testset = torchvision.datasets.CIFAR10(root='./data', train=False,
                                            download=True, transform=transform)
-    testloader = torch.utils.data.DataLoader(testset, batch_size=8,
+    testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
                                              shuffle=False, num_workers=1)
 
     # Create list of possible classifications
@@ -79,7 +89,7 @@ if __name__ == "__main__":
     # View some random training images (View training.png)
     dataiter = iter(trainloader)
     images, labels = dataiter.next()
-    torchvision.utils.save_image(images,"training_single.png")
+    torchvision.utils.save_image(images,"./outputs/training_single_{}.png".format(batch_size))
 
     print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
     
@@ -91,15 +101,12 @@ if __name__ == "__main__":
     print("\nCreate Loss function and optimizer\n")
 
     # Define Loss function and optimizer
-    criterion = nn.CrossEntropyLoss().to(device)
+    criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
     print("\nTraining Network\n")
     
-    if len(sys.argv) > 1:
-        episodes = int(sys.argv[1])
-    else:
-        episodes = 2
+    episodes=20
 
     # Train the network for 2 eopchs
     for epoch in range(episodes):  # loop over the dataset multiple times
@@ -113,14 +120,14 @@ if __name__ == "__main__":
             optimizer.zero_grad()
 
             # forward + backward + optimize
-            outputs = net(inputs).to(device)
-            loss = criterion(outputs, labels).to(device)
+            outputs = net(inputs)
+            loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
 
             # print statistics
             running_loss += loss.item()
-            if i % 2000 == 1999:    # print every 2000 mini-batches
+            if i % 100 == 99:    # print every 100 mini-batches
                 print('[%d, %5d] loss: %.3f' %
                         (epoch + 1, i + 1, running_loss / 2000))
                 running_loss = 0.0
@@ -130,7 +137,7 @@ if __name__ == "__main__":
     print("\nSave trained Model\n")
 
     # Save trained model
-    PATH = './cifar_net_single.pth'
+    PATH = './outputs/cifar_net_single_{}.pth'.format(batch_size)
     torch.save(net.state_dict(), PATH)
 
     print("\nTest the network\n")
@@ -141,7 +148,7 @@ if __name__ == "__main__":
     dataiter = iter(testloader)
     images, labels = dataiter.next()
     images, labels = images.to(device), labels.to(device)
-    torchvision.utils.save_image(images,"testing_single.png")
+    torchvision.utils.save_image(images,"./outputs/testing_single_{}.png".format(batch_size)) 
     print('GroundTruth: ', ' '.join('%5s' % classes[labels[j]] for j in range(4)))
 
     # Print the predictions for the images above
@@ -158,7 +165,7 @@ if __name__ == "__main__":
     with torch.no_grad():
         for data in testloader:
             images, labels = data[0].to(device), data[1].to(device)
-            outputs = net(images).to(device)
+            outputs = net(images)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
@@ -174,7 +181,7 @@ if __name__ == "__main__":
     with torch.no_grad():
         for data in testloader:
             images, labels = data[0].to(device), data[1].to(device)
-            outputs = net(images).to(device)
+            outputs = net(images)
             _, predicted = torch.max(outputs, 1)
             c = (predicted == labels).squeeze()
             for i in range(4):

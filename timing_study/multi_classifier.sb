@@ -2,8 +2,9 @@
 #SBATCH --qos=normal
 #SBATCH -n 1
 #SBATCH --gres=gpu:k80:4
-#SBATCH --time=0:30:00
-#SBATCH --mem=15G
+#SBATCH --time=24:00:00
+#SBATCH --mem=40G
+#SBATCH -o slurm.4GPU.%j.out 
 
 module load Anaconda/3
 module load GCC/8.3.0
@@ -11,4 +12,30 @@ module load CUDA/10.2.89
 
 conda activate pytorch_classifier
 
-srun python classifier.py 100
+# Load in Data to make timing fair
+python data_load.py
+
+file="./timing/multi_4.txt"
+
+echo "batch,time,accuracy" > $file
+
+# Loop through different batch sizes
+for batch in 50 100 150 200 250;
+do
+tmp="./timing/multi_tmp_${batch}.txt"
+echo "" > $tmp
+    for n in {1..10};
+    do
+        echo "Iteration $n : Batch Size $batch"
+        /usr/bin/time -f '\nreal time:%e' srun python multi_classifier.py $batch &>> $tmp
+    done
+
+# Save results to plot later
+avtime=`cat $tmp | grep real | cut -d ":" -f 2 | jq -s add/length`
+avaccuracy=`cat $tmp | grep 'Accuracy of the network' | cut -d ":" -f 2 | cut -d " " -f 2 | jq -s add/length`
+
+echo "${batch},${avtime},${avaccuracy}" >> $file
+
+done
+
+js -j ${SLURM_JOBID}

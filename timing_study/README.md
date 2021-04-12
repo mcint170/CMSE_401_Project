@@ -2,8 +2,10 @@
 
 This folder contains the code and scripts used to performed the timing
 study on the classification example. For this example I changed the `batch_size`
-and the number of epochs run. This will allow me to test the parallelization
-timing a little better.
+and the number of epochs run to make this problem more suitable for parallelization. 
+With a small `batch_size` the GPU parallelization actaually performs worse (becuase
+of overhead). For the time comparsion, I will compare the improvement using 4 
+GPU can bring, per `batch_size` of this classifier.
 
 Note that full installation and setup can be found in `../pytorch_classifier/README.md`.
 Since there is quite a bit of information I decieded to keep that sepearte from this
@@ -77,7 +79,7 @@ sbatch {VERSION}_classifier.sb
 
 This will run the classifier with either 1 or 4 GPU, depending on verison, for 20 epochs.
 
-To see the results of this timing study, please see `../Pytorch_Part2.ipynb`
+To see the results of this timing study, please see `../Classifier_Part_2.ipynb`
 
 # References
 
