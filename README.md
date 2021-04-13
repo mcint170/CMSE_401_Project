@@ -5,6 +5,9 @@ This folder contains all of the contents for the project.
 The project I selected is to implement PyTorch on the HPCC, and Parallalize with multiple GPUs a Convolutional Neural Network, made with pytorch, that learns how to classify images from CIFAR 10 images.
 
 Original (now outdated and not about this CNN) Project Proposal is located in Project_Proposal.ipynb
+This project was originally about training a Reinforcement Learning model to play the first level
+of Super Mario Bros. The code is fully functioning (besides for the `multi_GPU/` folder which contains
+code that
 
 A getexample-esque for PyTorch and this CNN is located in the `pytorch_classifier/` folder
 

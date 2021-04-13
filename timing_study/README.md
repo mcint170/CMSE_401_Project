@@ -43,15 +43,20 @@ I also have now implemented the use of multiple GPU usage as well.
 
 To run the code is simple. I have included a makefile to streamline the process.
 
-In order to start the program with 1 GPU or 1 CPU only simply run
+In run with CPU only run
+```bash
+make cpu
 ```
+
+In order to start the program with 1 GPU simply run
+```bash
 make single
 ```
 
 To start the program with multiple GPU. (If on `dev-intel16-k80` this will be 8 GPUs,
 if on `dev-amd20-v100` this will be 4 GPUs)
 
-```
+```bash
 make multi
 ```
 
@@ -71,7 +76,7 @@ These files can easily be deleted with this command
 make clean
 ```
 
-*Note: `{VERSION}` will either be `single` or `multi`.*
+*Note: `{VERSION}` will either be `cpu` or `single` or `multi`.*
 If you would like to run the timing test of these as a HPCC job, you can use the command.
 ```
 sbatch {VERSION}_classifier.sb

@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --qos=normal
+#SBATCH -n 1
+#SBATCH --time=100:00:00
+#SBATCH --mem=50G
+#SBATCH -o slurm.mario.CPU.%j.out
+
+module load Anaconda/3
+
+conda activate mario
+
+time srun python main.py 40000

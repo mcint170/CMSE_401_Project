@@ -1,0 +1,2501 @@
+
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  car   dog plane   dog
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.114
+[1,   500] loss: 0.113
+[1,   600] loss: 0.111
+[1,   700] loss: 0.105
+[1,   800] loss: 0.101
+[1,   900] loss: 0.099
+[1,  1000] loss: 0.097
+[2,   100] loss: 0.096
+[2,   200] loss: 0.093
+[2,   300] loss: 0.091
+[2,   400] loss: 0.090
+[2,   500] loss: 0.088
+[2,   600] loss: 0.088
+[2,   700] loss: 0.086
+[2,   800] loss: 0.082
+[2,   900] loss: 0.082
+[2,  1000] loss: 0.081
+[3,   100] loss: 0.080
+[3,   200] loss: 0.079
+[3,   300] loss: 0.078
+[3,   400] loss: 0.078
+[3,   500] loss: 0.078
+[3,   600] loss: 0.076
+[3,   700] loss: 0.076
+[3,   800] loss: 0.076
+[3,   900] loss: 0.074
+[3,  1000] loss: 0.075
+[4,   100] loss: 0.073
+[4,   200] loss: 0.073
+[4,   300] loss: 0.072
+[4,   400] loss: 0.072
+[4,   500] loss: 0.072
+[4,   600] loss: 0.071
+[4,   700] loss: 0.071
+[4,   800] loss: 0.071
+[4,   900] loss: 0.070
+[4,  1000] loss: 0.070
+[5,   100] loss: 0.067
+[5,   200] loss: 0.068
+[5,   300] loss: 0.070
+[5,   400] loss: 0.068
+[5,   500] loss: 0.068
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.067
+[5,   900] loss: 0.066
+[5,  1000] loss: 0.064
+[6,   100] loss: 0.064
+[6,   200] loss: 0.064
+[6,   300] loss: 0.065
+[6,   400] loss: 0.063
+[6,   500] loss: 0.064
+[6,   600] loss: 0.062
+[6,   700] loss: 0.063
+[6,   800] loss: 0.062
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.062
+[7,   100] loss: 0.062
+[7,   200] loss: 0.061
+[7,   300] loss: 0.060
+[7,   400] loss: 0.062
+[7,   500] loss: 0.061
+[7,   600] loss: 0.060
+[7,   700] loss: 0.060
+[7,   800] loss: 0.059
+[7,   900] loss: 0.059
+[7,  1000] loss: 0.059
+[8,   100] loss: 0.057
+[8,   200] loss: 0.056
+[8,   300] loss: 0.058
+[8,   400] loss: 0.058
+[8,   500] loss: 0.058
+[8,   600] loss: 0.057
+[8,   700] loss: 0.056
+[8,   800] loss: 0.057
+[8,   900] loss: 0.057
+[8,  1000] loss: 0.056
+[9,   100] loss: 0.055
+[9,   200] loss: 0.055
+[9,   300] loss: 0.054
+[9,   400] loss: 0.054
+[9,   500] loss: 0.054
+[9,   600] loss: 0.053
+[9,   700] loss: 0.054
+[9,   800] loss: 0.054
+[9,   900] loss: 0.055
+[9,  1000] loss: 0.055
+[10,   100] loss: 0.053
+[10,   200] loss: 0.052
+[10,   300] loss: 0.053
+[10,   400] loss: 0.054
+[10,   500] loss: 0.051
+[10,   600] loss: 0.051
+[10,   700] loss: 0.052
+[10,   800] loss: 0.052
+[10,   900] loss: 0.052
+[10,  1000] loss: 0.051
+[11,   100] loss: 0.050
+[11,   200] loss: 0.050
+[11,   300] loss: 0.051
+[11,   400] loss: 0.050
+[11,   500] loss: 0.050
+[11,   600] loss: 0.050
+[11,   700] loss: 0.050
+[11,   800] loss: 0.050
+[11,   900] loss: 0.050
+[11,  1000] loss: 0.051
+[12,   100] loss: 0.049
+[12,   200] loss: 0.049
+[12,   300] loss: 0.049
+[12,   400] loss: 0.049
+[12,   500] loss: 0.047
+[12,   600] loss: 0.047
+[12,   700] loss: 0.049
+[12,   800] loss: 0.050
+[12,   900] loss: 0.048
+[12,  1000] loss: 0.049
+[13,   100] loss: 0.047
+[13,   200] loss: 0.047
+[13,   300] loss: 0.047
+[13,   400] loss: 0.047
+[13,   500] loss: 0.049
+[13,   600] loss: 0.046
+[13,   700] loss: 0.046
+[13,   800] loss: 0.048
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.046
+[14,   100] loss: 0.045
+[14,   200] loss: 0.045
+[14,   300] loss: 0.046
+[14,   400] loss: 0.045
+[14,   500] loss: 0.045
+[14,   600] loss: 0.047
+[14,   700] loss: 0.046
+[14,   800] loss: 0.045
+[14,   900] loss: 0.046
+[14,  1000] loss: 0.045
+[15,   100] loss: 0.044
+[15,   200] loss: 0.045
+[15,   300] loss: 0.044
+[15,   400] loss: 0.044
+[15,   500] loss: 0.046
+[15,   600] loss: 0.044
+[15,   700] loss: 0.045
+[15,   800] loss: 0.044
+[15,   900] loss: 0.045
+[15,  1000] loss: 0.044
+[16,   100] loss: 0.042
+[16,   200] loss: 0.043
+[16,   300] loss: 0.043
+[16,   400] loss: 0.042
+[16,   500] loss: 0.043
+[16,   600] loss: 0.045
+[16,   700] loss: 0.043
+[16,   800] loss: 0.043
+[16,   900] loss: 0.043
+[16,  1000] loss: 0.043
+[17,   100] loss: 0.041
+[17,   200] loss: 0.041
+[17,   300] loss: 0.043
+[17,   400] loss: 0.042
+[17,   500] loss: 0.042
+[17,   600] loss: 0.042
+[17,   700] loss: 0.041
+[17,   800] loss: 0.042
+[17,   900] loss: 0.041
+[17,  1000] loss: 0.041
+[18,   100] loss: 0.040
+[18,   200] loss: 0.041
+[18,   300] loss: 0.041
+[18,   400] loss: 0.040
+[18,   500] loss: 0.041
+[18,   600] loss: 0.042
+[18,   700] loss: 0.041
+[18,   800] loss: 0.040
+[18,   900] loss: 0.041
+[18,  1000] loss: 0.039
+[19,   100] loss: 0.038
+[19,   200] loss: 0.040
+[19,   300] loss: 0.041
+[19,   400] loss: 0.040
+[19,   500] loss: 0.039
+[19,   600] loss: 0.040
+[19,   700] loss: 0.040
+[19,   800] loss: 0.038
+[19,   900] loss: 0.040
+[19,  1000] loss: 0.040
+[20,   100] loss: 0.039
+[20,   200] loss: 0.038
+[20,   300] loss: 0.038
+[20,   400] loss: 0.039
+[20,   500] loss: 0.039
+[20,   600] loss: 0.038
+[20,   700] loss: 0.039
+[20,   800] loss: 0.038
+[20,   900] loss: 0.039
+[20,  1000] loss: 0.038
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat   car  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 69 %
+
+Class Accuracy
+
+Accuracy of plane : 77 %
+Accuracy of   car : 80 %
+Accuracy of  bird : 45 %
+Accuracy of   cat : 53 %
+Accuracy of  deer : 63 %
+Accuracy of   dog : 59 %
+Accuracy of  frog : 76 %
+Accuracy of horse : 76 %
+Accuracy of  ship : 80 %
+Accuracy of truck : 76 %
+
+real time:2553.73
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ deer   cat  frog truck
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.114
+[1,   600] loss: 0.114
+[1,   700] loss: 0.112
+[1,   800] loss: 0.111
+[1,   900] loss: 0.109
+[1,  1000] loss: 0.106
+[2,   100] loss: 0.103
+[2,   200] loss: 0.100
+[2,   300] loss: 0.098
+[2,   400] loss: 0.096
+[2,   500] loss: 0.095
+[2,   600] loss: 0.094
+[2,   700] loss: 0.092
+[2,   800] loss: 0.090
+[2,   900] loss: 0.089
+[2,  1000] loss: 0.087
+[3,   100] loss: 0.085
+[3,   200] loss: 0.084
+[3,   300] loss: 0.083
+[3,   400] loss: 0.080
+[3,   500] loss: 0.080
+[3,   600] loss: 0.079
+[3,   700] loss: 0.079
+[3,   800] loss: 0.078
+[3,   900] loss: 0.076
+[3,  1000] loss: 0.077
+[4,   100] loss: 0.075
+[4,   200] loss: 0.075
+[4,   300] loss: 0.074
+[4,   400] loss: 0.075
+[4,   500] loss: 0.073
+[4,   600] loss: 0.072
+[4,   700] loss: 0.071
+[4,   800] loss: 0.072
+[4,   900] loss: 0.071
+[4,  1000] loss: 0.070
+[5,   100] loss: 0.070
+[5,   200] loss: 0.070
+[5,   300] loss: 0.069
+[5,   400] loss: 0.069
+[5,   500] loss: 0.068
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.066
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.066
+[6,   100] loss: 0.066
+[6,   200] loss: 0.065
+[6,   300] loss: 0.064
+[6,   400] loss: 0.063
+[6,   500] loss: 0.065
+[6,   600] loss: 0.065
+[6,   700] loss: 0.064
+[6,   800] loss: 0.065
+[6,   900] loss: 0.062
+[6,  1000] loss: 0.063
+[7,   100] loss: 0.061
+[7,   200] loss: 0.064
+[7,   300] loss: 0.062
+[7,   400] loss: 0.061
+[7,   500] loss: 0.060
+[7,   600] loss: 0.061
+[7,   700] loss: 0.062
+[7,   800] loss: 0.059
+[7,   900] loss: 0.060
+[7,  1000] loss: 0.059
+[8,   100] loss: 0.059
+[8,   200] loss: 0.058
+[8,   300] loss: 0.059
+[8,   400] loss: 0.059
+[8,   500] loss: 0.058
+[8,   600] loss: 0.059
+[8,   700] loss: 0.057
+[8,   800] loss: 0.057
+[8,   900] loss: 0.056
+[8,  1000] loss: 0.055
+[9,   100] loss: 0.055
+[9,   200] loss: 0.056
+[9,   300] loss: 0.056
+[9,   400] loss: 0.056
+[9,   500] loss: 0.057
+[9,   600] loss: 0.056
+[9,   700] loss: 0.054
+[9,   800] loss: 0.054
+[9,   900] loss: 0.053
+[9,  1000] loss: 0.055
+[10,   100] loss: 0.053
+[10,   200] loss: 0.053
+[10,   300] loss: 0.053
+[10,   400] loss: 0.053
+[10,   500] loss: 0.053
+[10,   600] loss: 0.052
+[10,   700] loss: 0.052
+[10,   800] loss: 0.053
+[10,   900] loss: 0.054
+[10,  1000] loss: 0.053
+[11,   100] loss: 0.052
+[11,   200] loss: 0.050
+[11,   300] loss: 0.051
+[11,   400] loss: 0.050
+[11,   500] loss: 0.051
+[11,   600] loss: 0.051
+[11,   700] loss: 0.051
+[11,   800] loss: 0.053
+[11,   900] loss: 0.051
+[11,  1000] loss: 0.051
+[12,   100] loss: 0.051
+[12,   200] loss: 0.050
+[12,   300] loss: 0.050
+[12,   400] loss: 0.049
+[12,   500] loss: 0.050
+[12,   600] loss: 0.049
+[12,   700] loss: 0.050
+[12,   800] loss: 0.049
+[12,   900] loss: 0.049
+[12,  1000] loss: 0.049
+[13,   100] loss: 0.048
+[13,   200] loss: 0.049
+[13,   300] loss: 0.049
+[13,   400] loss: 0.048
+[13,   500] loss: 0.048
+[13,   600] loss: 0.048
+[13,   700] loss: 0.047
+[13,   800] loss: 0.047
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.048
+[14,   100] loss: 0.047
+[14,   200] loss: 0.046
+[14,   300] loss: 0.046
+[14,   400] loss: 0.047
+[14,   500] loss: 0.048
+[14,   600] loss: 0.047
+[14,   700] loss: 0.047
+[14,   800] loss: 0.046
+[14,   900] loss: 0.046
+[14,  1000] loss: 0.045
+[15,   100] loss: 0.045
+[15,   200] loss: 0.046
+[15,   300] loss: 0.045
+[15,   400] loss: 0.045
+[15,   500] loss: 0.046
+[15,   600] loss: 0.045
+[15,   700] loss: 0.045
+[15,   800] loss: 0.045
+[15,   900] loss: 0.045
+[15,  1000] loss: 0.043
+[16,   100] loss: 0.044
+[16,   200] loss: 0.043
+[16,   300] loss: 0.042
+[16,   400] loss: 0.043
+[16,   500] loss: 0.044
+[16,   600] loss: 0.045
+[16,   700] loss: 0.044
+[16,   800] loss: 0.044
+[16,   900] loss: 0.044
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.043
+[17,   200] loss: 0.043
+[17,   300] loss: 0.043
+[17,   400] loss: 0.042
+[17,   500] loss: 0.043
+[17,   600] loss: 0.043
+[17,   700] loss: 0.041
+[17,   800] loss: 0.042
+[17,   900] loss: 0.042
+[17,  1000] loss: 0.044
+[18,   100] loss: 0.043
+[18,   200] loss: 0.041
+[18,   300] loss: 0.042
+[18,   400] loss: 0.041
+[18,   500] loss: 0.042
+[18,   600] loss: 0.041
+[18,   700] loss: 0.041
+[18,   800] loss: 0.041
+[18,   900] loss: 0.041
+[18,  1000] loss: 0.042
+[19,   100] loss: 0.040
+[19,   200] loss: 0.040
+[19,   300] loss: 0.039
+[19,   400] loss: 0.040
+[19,   500] loss: 0.040
+[19,   600] loss: 0.040
+[19,   700] loss: 0.040
+[19,   800] loss: 0.040
+[19,   900] loss: 0.041
+[19,  1000] loss: 0.040
+[20,   100] loss: 0.038
+[20,   200] loss: 0.040
+[20,   300] loss: 0.039
+[20,   400] loss: 0.041
+[20,   500] loss: 0.039
+[20,   600] loss: 0.039
+[20,   700] loss: 0.038
+[20,   800] loss: 0.041
+[20,   900] loss: 0.040
+[20,  1000] loss: 0.039
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship plane plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 68 %
+
+Class Accuracy
+
+Accuracy of plane : 89 %
+Accuracy of   car : 85 %
+Accuracy of  bird : 47 %
+Accuracy of   cat : 54 %
+Accuracy of  deer : 64 %
+Accuracy of   dog : 54 %
+Accuracy of  frog : 71 %
+Accuracy of horse : 77 %
+Accuracy of  ship : 70 %
+Accuracy of truck : 70 %
+
+real time:2566.07
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ bird   dog  bird  ship
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.114
+[1,   500] loss: 0.113
+[1,   600] loss: 0.111
+[1,   700] loss: 0.107
+[1,   800] loss: 0.102
+[1,   900] loss: 0.100
+[1,  1000] loss: 0.098
+[2,   100] loss: 0.095
+[2,   200] loss: 0.094
+[2,   300] loss: 0.092
+[2,   400] loss: 0.091
+[2,   500] loss: 0.089
+[2,   600] loss: 0.088
+[2,   700] loss: 0.087
+[2,   800] loss: 0.084
+[2,   900] loss: 0.083
+[2,  1000] loss: 0.082
+[3,   100] loss: 0.082
+[3,   200] loss: 0.081
+[3,   300] loss: 0.081
+[3,   400] loss: 0.080
+[3,   500] loss: 0.077
+[3,   600] loss: 0.079
+[3,   700] loss: 0.078
+[3,   800] loss: 0.077
+[3,   900] loss: 0.077
+[3,  1000] loss: 0.074
+[4,   100] loss: 0.074
+[4,   200] loss: 0.074
+[4,   300] loss: 0.075
+[4,   400] loss: 0.073
+[4,   500] loss: 0.073
+[4,   600] loss: 0.071
+[4,   700] loss: 0.072
+[4,   800] loss: 0.071
+[4,   900] loss: 0.071
+[4,  1000] loss: 0.070
+[5,   100] loss: 0.069
+[5,   200] loss: 0.069
+[5,   300] loss: 0.069
+[5,   400] loss: 0.068
+[5,   500] loss: 0.068
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.067
+[5,   900] loss: 0.065
+[5,  1000] loss: 0.067
+[6,   100] loss: 0.065
+[6,   200] loss: 0.066
+[6,   300] loss: 0.067
+[6,   400] loss: 0.065
+[6,   500] loss: 0.064
+[6,   600] loss: 0.064
+[6,   700] loss: 0.064
+[6,   800] loss: 0.064
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.061
+[7,   100] loss: 0.062
+[7,   200] loss: 0.061
+[7,   300] loss: 0.061
+[7,   400] loss: 0.060
+[7,   500] loss: 0.061
+[7,   600] loss: 0.062
+[7,   700] loss: 0.061
+[7,   800] loss: 0.061
+[7,   900] loss: 0.060
+[7,  1000] loss: 0.060
+[8,   100] loss: 0.059
+[8,   200] loss: 0.058
+[8,   300] loss: 0.059
+[8,   400] loss: 0.059
+[8,   500] loss: 0.058
+[8,   600] loss: 0.057
+[8,   700] loss: 0.057
+[8,   800] loss: 0.058
+[8,   900] loss: 0.057
+[8,  1000] loss: 0.057
+[9,   100] loss: 0.056
+[9,   200] loss: 0.056
+[9,   300] loss: 0.057
+[9,   400] loss: 0.056
+[9,   500] loss: 0.056
+[9,   600] loss: 0.054
+[9,   700] loss: 0.055
+[9,   800] loss: 0.055
+[9,   900] loss: 0.054
+[9,  1000] loss: 0.055
+[10,   100] loss: 0.054
+[10,   200] loss: 0.053
+[10,   300] loss: 0.053
+[10,   400] loss: 0.053
+[10,   500] loss: 0.053
+[10,   600] loss: 0.052
+[10,   700] loss: 0.055
+[10,   800] loss: 0.053
+[10,   900] loss: 0.053
+[10,  1000] loss: 0.053
+[11,   100] loss: 0.052
+[11,   200] loss: 0.051
+[11,   300] loss: 0.052
+[11,   400] loss: 0.050
+[11,   500] loss: 0.050
+[11,   600] loss: 0.052
+[11,   700] loss: 0.052
+[11,   800] loss: 0.051
+[11,   900] loss: 0.052
+[11,  1000] loss: 0.051
+[12,   100] loss: 0.050
+[12,   200] loss: 0.050
+[12,   300] loss: 0.050
+[12,   400] loss: 0.049
+[12,   500] loss: 0.050
+[12,   600] loss: 0.050
+[12,   700] loss: 0.050
+[12,   800] loss: 0.049
+[12,   900] loss: 0.049
+[12,  1000] loss: 0.050
+[13,   100] loss: 0.048
+[13,   200] loss: 0.048
+[13,   300] loss: 0.048
+[13,   400] loss: 0.048
+[13,   500] loss: 0.049
+[13,   600] loss: 0.049
+[13,   700] loss: 0.050
+[13,   800] loss: 0.048
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.048
+[14,   100] loss: 0.046
+[14,   200] loss: 0.047
+[14,   300] loss: 0.048
+[14,   400] loss: 0.047
+[14,   500] loss: 0.048
+[14,   600] loss: 0.048
+[14,   700] loss: 0.046
+[14,   800] loss: 0.046
+[14,   900] loss: 0.047
+[14,  1000] loss: 0.047
+[15,   100] loss: 0.045
+[15,   200] loss: 0.047
+[15,   300] loss: 0.045
+[15,   400] loss: 0.047
+[15,   500] loss: 0.046
+[15,   600] loss: 0.046
+[15,   700] loss: 0.045
+[15,   800] loss: 0.046
+[15,   900] loss: 0.045
+[15,  1000] loss: 0.046
+[16,   100] loss: 0.045
+[16,   200] loss: 0.045
+[16,   300] loss: 0.045
+[16,   400] loss: 0.044
+[16,   500] loss: 0.044
+[16,   600] loss: 0.044
+[16,   700] loss: 0.045
+[16,   800] loss: 0.046
+[16,   900] loss: 0.044
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.043
+[17,   200] loss: 0.043
+[17,   300] loss: 0.044
+[17,   400] loss: 0.043
+[17,   500] loss: 0.043
+[17,   600] loss: 0.043
+[17,   700] loss: 0.044
+[17,   800] loss: 0.042
+[17,   900] loss: 0.044
+[17,  1000] loss: 0.044
+[18,   100] loss: 0.041
+[18,   200] loss: 0.041
+[18,   300] loss: 0.043
+[18,   400] loss: 0.042
+[18,   500] loss: 0.042
+[18,   600] loss: 0.041
+[18,   700] loss: 0.043
+[18,   800] loss: 0.043
+[18,   900] loss: 0.043
+[18,  1000] loss: 0.042
+[19,   100] loss: 0.041
+[19,   200] loss: 0.040
+[19,   300] loss: 0.041
+[19,   400] loss: 0.042
+[19,   500] loss: 0.041
+[19,   600] loss: 0.041
+[19,   700] loss: 0.041
+[19,   800] loss: 0.041
+[19,   900] loss: 0.041
+[19,  1000] loss: 0.042
+[20,   100] loss: 0.041
+[20,   200] loss: 0.040
+[20,   300] loss: 0.040
+[20,   400] loss: 0.039
+[20,   500] loss: 0.040
+[20,   600] loss: 0.039
+[20,   700] loss: 0.040
+[20,   800] loss: 0.040
+[20,   900] loss: 0.040
+[20,  1000] loss: 0.041
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 68 %
+
+Class Accuracy
+
+Accuracy of plane : 76 %
+Accuracy of   car : 85 %
+Accuracy of  bird : 59 %
+Accuracy of   cat : 46 %
+Accuracy of  deer : 62 %
+Accuracy of   dog : 40 %
+Accuracy of  frog : 70 %
+Accuracy of horse : 83 %
+Accuracy of  ship : 77 %
+Accuracy of truck : 61 %
+
+real time:2840.93
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ bird   car truck   cat
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.114
+[1,   600] loss: 0.113
+[1,   700] loss: 0.111
+[1,   800] loss: 0.107
+[1,   900] loss: 0.104
+[1,  1000] loss: 0.101
+[2,   100] loss: 0.099
+[2,   200] loss: 0.098
+[2,   300] loss: 0.096
+[2,   400] loss: 0.095
+[2,   500] loss: 0.093
+[2,   600] loss: 0.092
+[2,   700] loss: 0.088
+[2,   800] loss: 0.088
+[2,   900] loss: 0.086
+[2,  1000] loss: 0.085
+[3,   100] loss: 0.083
+[3,   200] loss: 0.083
+[3,   300] loss: 0.081
+[3,   400] loss: 0.079
+[3,   500] loss: 0.080
+[3,   600] loss: 0.079
+[3,   700] loss: 0.079
+[3,   800] loss: 0.078
+[3,   900] loss: 0.077
+[3,  1000] loss: 0.075
+[4,   100] loss: 0.075
+[4,   200] loss: 0.076
+[4,   300] loss: 0.075
+[4,   400] loss: 0.074
+[4,   500] loss: 0.071
+[4,   600] loss: 0.073
+[4,   700] loss: 0.071
+[4,   800] loss: 0.073
+[4,   900] loss: 0.072
+[4,  1000] loss: 0.071
+[5,   100] loss: 0.071
+[5,   200] loss: 0.070
+[5,   300] loss: 0.069
+[5,   400] loss: 0.069
+[5,   500] loss: 0.069
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.068
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.067
+[6,   100] loss: 0.066
+[6,   200] loss: 0.068
+[6,   300] loss: 0.066
+[6,   400] loss: 0.066
+[6,   500] loss: 0.065
+[6,   600] loss: 0.064
+[6,   700] loss: 0.065
+[6,   800] loss: 0.064
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.063
+[7,   100] loss: 0.062
+[7,   200] loss: 0.063
+[7,   300] loss: 0.063
+[7,   400] loss: 0.063
+[7,   500] loss: 0.060
+[7,   600] loss: 0.061
+[7,   700] loss: 0.061
+[7,   800] loss: 0.060
+[7,   900] loss: 0.061
+[7,  1000] loss: 0.061
+[8,   100] loss: 0.060
+[8,   200] loss: 0.059
+[8,   300] loss: 0.059
+[8,   400] loss: 0.059
+[8,   500] loss: 0.058
+[8,   600] loss: 0.057
+[8,   700] loss: 0.057
+[8,   800] loss: 0.060
+[8,   900] loss: 0.057
+[8,  1000] loss: 0.059
+[9,   100] loss: 0.056
+[9,   200] loss: 0.056
+[9,   300] loss: 0.058
+[9,   400] loss: 0.057
+[9,   500] loss: 0.056
+[9,   600] loss: 0.055
+[9,   700] loss: 0.055
+[9,   800] loss: 0.056
+[9,   900] loss: 0.054
+[9,  1000] loss: 0.056
+[10,   100] loss: 0.054
+[10,   200] loss: 0.054
+[10,   300] loss: 0.054
+[10,   400] loss: 0.054
+[10,   500] loss: 0.054
+[10,   600] loss: 0.053
+[10,   700] loss: 0.054
+[10,   800] loss: 0.054
+[10,   900] loss: 0.052
+[10,  1000] loss: 0.052
+[11,   100] loss: 0.053
+[11,   200] loss: 0.051
+[11,   300] loss: 0.051
+[11,   400] loss: 0.054
+[11,   500] loss: 0.052
+[11,   600] loss: 0.051
+[11,   700] loss: 0.051
+[11,   800] loss: 0.051
+[11,   900] loss: 0.050
+[11,  1000] loss: 0.051
+[12,   100] loss: 0.050
+[12,   200] loss: 0.050
+[12,   300] loss: 0.050
+[12,   400] loss: 0.049
+[12,   500] loss: 0.049
+[12,   600] loss: 0.049
+[12,   700] loss: 0.050
+[12,   800] loss: 0.049
+[12,   900] loss: 0.051
+[12,  1000] loss: 0.050
+[13,   100] loss: 0.047
+[13,   200] loss: 0.049
+[13,   300] loss: 0.048
+[13,   400] loss: 0.048
+[13,   500] loss: 0.048
+[13,   600] loss: 0.049
+[13,   700] loss: 0.048
+[13,   800] loss: 0.048
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.047
+[14,   100] loss: 0.047
+[14,   200] loss: 0.046
+[14,   300] loss: 0.047
+[14,   400] loss: 0.047
+[14,   500] loss: 0.048
+[14,   600] loss: 0.046
+[14,   700] loss: 0.048
+[14,   800] loss: 0.046
+[14,   900] loss: 0.046
+[14,  1000] loss: 0.046
+[15,   100] loss: 0.046
+[15,   200] loss: 0.046
+[15,   300] loss: 0.045
+[15,   400] loss: 0.044
+[15,   500] loss: 0.046
+[15,   600] loss: 0.045
+[15,   700] loss: 0.045
+[15,   800] loss: 0.044
+[15,   900] loss: 0.045
+[15,  1000] loss: 0.046
+[16,   100] loss: 0.043
+[16,   200] loss: 0.046
+[16,   300] loss: 0.043
+[16,   400] loss: 0.044
+[16,   500] loss: 0.043
+[16,   600] loss: 0.044
+[16,   700] loss: 0.044
+[16,   800] loss: 0.045
+[16,   900] loss: 0.043
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.043
+[17,   200] loss: 0.044
+[17,   300] loss: 0.041
+[17,   400] loss: 0.044
+[17,   500] loss: 0.043
+[17,   600] loss: 0.043
+[17,   700] loss: 0.044
+[17,   800] loss: 0.042
+[17,   900] loss: 0.043
+[17,  1000] loss: 0.043
+[18,   100] loss: 0.042
+[18,   200] loss: 0.043
+[18,   300] loss: 0.042
+[18,   400] loss: 0.041
+[18,   500] loss: 0.043
+[18,   600] loss: 0.043
+[18,   700] loss: 0.040
+[18,   800] loss: 0.042
+[18,   900] loss: 0.042
+[18,  1000] loss: 0.041
+[19,   100] loss: 0.040
+[19,   200] loss: 0.041
+[19,   300] loss: 0.041
+[19,   400] loss: 0.041
+[19,   500] loss: 0.041
+[19,   600] loss: 0.041
+[19,   700] loss: 0.039
+[19,   800] loss: 0.041
+[19,   900] loss: 0.041
+[19,  1000] loss: 0.041
+[20,   100] loss: 0.039
+[20,   200] loss: 0.039
+[20,   300] loss: 0.040
+[20,   400] loss: 0.040
+[20,   500] loss: 0.040
+[20,   600] loss: 0.040
+[20,   700] loss: 0.039
+[20,   800] loss: 0.041
+[20,   900] loss: 0.040
+[20,  1000] loss: 0.040
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 69 %
+
+Class Accuracy
+
+Accuracy of plane : 85 %
+Accuracy of   car : 83 %
+Accuracy of  bird : 42 %
+Accuracy of   cat : 55 %
+Accuracy of  deer : 69 %
+Accuracy of   dog : 48 %
+Accuracy of  frog : 77 %
+Accuracy of horse : 76 %
+Accuracy of  ship : 82 %
+Accuracy of truck : 68 %
+
+real time:2555.93
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  car truck plane horse
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.114
+[1,   600] loss: 0.113
+[1,   700] loss: 0.110
+[1,   800] loss: 0.105
+[1,   900] loss: 0.102
+[1,  1000] loss: 0.100
+[2,   100] loss: 0.098
+[2,   200] loss: 0.096
+[2,   300] loss: 0.095
+[2,   400] loss: 0.093
+[2,   500] loss: 0.091
+[2,   600] loss: 0.089
+[2,   700] loss: 0.088
+[2,   800] loss: 0.087
+[2,   900] loss: 0.086
+[2,  1000] loss: 0.083
+[3,   100] loss: 0.082
+[3,   200] loss: 0.081
+[3,   300] loss: 0.082
+[3,   400] loss: 0.080
+[3,   500] loss: 0.080
+[3,   600] loss: 0.079
+[3,   700] loss: 0.079
+[3,   800] loss: 0.077
+[3,   900] loss: 0.078
+[3,  1000] loss: 0.075
+[4,   100] loss: 0.075
+[4,   200] loss: 0.075
+[4,   300] loss: 0.075
+[4,   400] loss: 0.075
+[4,   500] loss: 0.073
+[4,   600] loss: 0.073
+[4,   700] loss: 0.073
+[4,   800] loss: 0.071
+[4,   900] loss: 0.072
+[4,  1000] loss: 0.072
+[5,   100] loss: 0.070
+[5,   200] loss: 0.070
+[5,   300] loss: 0.070
+[5,   400] loss: 0.069
+[5,   500] loss: 0.071
+[5,   600] loss: 0.069
+[5,   700] loss: 0.070
+[5,   800] loss: 0.068
+[5,   900] loss: 0.066
+[5,  1000] loss: 0.066
+[6,   100] loss: 0.066
+[6,   200] loss: 0.066
+[6,   300] loss: 0.067
+[6,   400] loss: 0.066
+[6,   500] loss: 0.065
+[6,   600] loss: 0.065
+[6,   700] loss: 0.066
+[6,   800] loss: 0.065
+[6,   900] loss: 0.064
+[6,  1000] loss: 0.064
+[7,   100] loss: 0.065
+[7,   200] loss: 0.062
+[7,   300] loss: 0.062
+[7,   400] loss: 0.062
+[7,   500] loss: 0.063
+[7,   600] loss: 0.062
+[7,   700] loss: 0.060
+[7,   800] loss: 0.060
+[7,   900] loss: 0.061
+[7,  1000] loss: 0.061
+[8,   100] loss: 0.061
+[8,   200] loss: 0.060
+[8,   300] loss: 0.059
+[8,   400] loss: 0.060
+[8,   500] loss: 0.059
+[8,   600] loss: 0.059
+[8,   700] loss: 0.058
+[8,   800] loss: 0.060
+[8,   900] loss: 0.059
+[8,  1000] loss: 0.058
+[9,   100] loss: 0.058
+[9,   200] loss: 0.058
+[9,   300] loss: 0.056
+[9,   400] loss: 0.057
+[9,   500] loss: 0.056
+[9,   600] loss: 0.056
+[9,   700] loss: 0.058
+[9,   800] loss: 0.056
+[9,   900] loss: 0.056
+[9,  1000] loss: 0.056
+[10,   100] loss: 0.055
+[10,   200] loss: 0.055
+[10,   300] loss: 0.054
+[10,   400] loss: 0.056
+[10,   500] loss: 0.053
+[10,   600] loss: 0.054
+[10,   700] loss: 0.055
+[10,   800] loss: 0.056
+[10,   900] loss: 0.054
+[10,  1000] loss: 0.053
+[11,   100] loss: 0.052
+[11,   200] loss: 0.053
+[11,   300] loss: 0.052
+[11,   400] loss: 0.053
+[11,   500] loss: 0.053
+[11,   600] loss: 0.052
+[11,   700] loss: 0.052
+[11,   800] loss: 0.054
+[11,   900] loss: 0.052
+[11,  1000] loss: 0.053
+[12,   100] loss: 0.050
+[12,   200] loss: 0.050
+[12,   300] loss: 0.050
+[12,   400] loss: 0.053
+[12,   500] loss: 0.050
+[12,   600] loss: 0.050
+[12,   700] loss: 0.050
+[12,   800] loss: 0.050
+[12,   900] loss: 0.052
+[12,  1000] loss: 0.052
+[13,   100] loss: 0.049
+[13,   200] loss: 0.049
+[13,   300] loss: 0.049
+[13,   400] loss: 0.050
+[13,   500] loss: 0.050
+[13,   600] loss: 0.049
+[13,   700] loss: 0.049
+[13,   800] loss: 0.049
+[13,   900] loss: 0.049
+[13,  1000] loss: 0.049
+[14,   100] loss: 0.047
+[14,   200] loss: 0.048
+[14,   300] loss: 0.048
+[14,   400] loss: 0.048
+[14,   500] loss: 0.047
+[14,   600] loss: 0.048
+[14,   700] loss: 0.048
+[14,   800] loss: 0.047
+[14,   900] loss: 0.048
+[14,  1000] loss: 0.047
+[15,   100] loss: 0.046
+[15,   200] loss: 0.047
+[15,   300] loss: 0.046
+[15,   400] loss: 0.044
+[15,   500] loss: 0.047
+[15,   600] loss: 0.047
+[15,   700] loss: 0.046
+[15,   800] loss: 0.048
+[15,   900] loss: 0.046
+[15,  1000] loss: 0.047
+[16,   100] loss: 0.045
+[16,   200] loss: 0.045
+[16,   300] loss: 0.044
+[16,   400] loss: 0.046
+[16,   500] loss: 0.045
+[16,   600] loss: 0.046
+[16,   700] loss: 0.046
+[16,   800] loss: 0.045
+[16,   900] loss: 0.045
+[16,  1000] loss: 0.045
+[17,   100] loss: 0.045
+[17,   200] loss: 0.044
+[17,   300] loss: 0.044
+[17,   400] loss: 0.043
+[17,   500] loss: 0.044
+[17,   600] loss: 0.044
+[17,   700] loss: 0.044
+[17,   800] loss: 0.043
+[17,   900] loss: 0.045
+[17,  1000] loss: 0.044
+[18,   100] loss: 0.043
+[18,   200] loss: 0.044
+[18,   300] loss: 0.043
+[18,   400] loss: 0.044
+[18,   500] loss: 0.044
+[18,   600] loss: 0.042
+[18,   700] loss: 0.041
+[18,   800] loss: 0.043
+[18,   900] loss: 0.044
+[18,  1000] loss: 0.043
+[19,   100] loss: 0.041
+[19,   200] loss: 0.043
+[19,   300] loss: 0.043
+[19,   400] loss: 0.041
+[19,   500] loss: 0.042
+[19,   600] loss: 0.042
+[19,   700] loss: 0.042
+[19,   800] loss: 0.042
+[19,   900] loss: 0.042
+[19,  1000] loss: 0.043
+[20,   100] loss: 0.040
+[20,   200] loss: 0.039
+[20,   300] loss: 0.041
+[20,   400] loss: 0.040
+[20,   500] loss: 0.043
+[20,   600] loss: 0.042
+[20,   700] loss: 0.041
+[20,   800] loss: 0.041
+[20,   900] loss: 0.041
+[20,  1000] loss: 0.042
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat   car  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 67 %
+
+Class Accuracy
+
+Accuracy of plane : 82 %
+Accuracy of   car : 89 %
+Accuracy of  bird : 51 %
+Accuracy of   cat : 46 %
+Accuracy of  deer : 57 %
+Accuracy of   dog : 38 %
+Accuracy of  frog : 74 %
+Accuracy of horse : 77 %
+Accuracy of  ship : 70 %
+Accuracy of truck : 77 %
+
+real time:2553.84
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ frog  frog   cat horse
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.115
+[1,   600] loss: 0.115
+[1,   700] loss: 0.114
+[1,   800] loss: 0.113
+[1,   900] loss: 0.111
+[1,  1000] loss: 0.107
+[2,   100] loss: 0.103
+[2,   200] loss: 0.100
+[2,   300] loss: 0.098
+[2,   400] loss: 0.096
+[2,   500] loss: 0.094
+[2,   600] loss: 0.093
+[2,   700] loss: 0.091
+[2,   800] loss: 0.090
+[2,   900] loss: 0.088
+[2,  1000] loss: 0.086
+[3,   100] loss: 0.085
+[3,   200] loss: 0.084
+[3,   300] loss: 0.083
+[3,   400] loss: 0.080
+[3,   500] loss: 0.081
+[3,   600] loss: 0.080
+[3,   700] loss: 0.079
+[3,   800] loss: 0.078
+[3,   900] loss: 0.078
+[3,  1000] loss: 0.076
+[4,   100] loss: 0.075
+[4,   200] loss: 0.074
+[4,   300] loss: 0.074
+[4,   400] loss: 0.075
+[4,   500] loss: 0.073
+[4,   600] loss: 0.074
+[4,   700] loss: 0.074
+[4,   800] loss: 0.072
+[4,   900] loss: 0.073
+[4,  1000] loss: 0.071
+[5,   100] loss: 0.071
+[5,   200] loss: 0.069
+[5,   300] loss: 0.071
+[5,   400] loss: 0.070
+[5,   500] loss: 0.070
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.068
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.068
+[6,   100] loss: 0.067
+[6,   200] loss: 0.066
+[6,   300] loss: 0.065
+[6,   400] loss: 0.067
+[6,   500] loss: 0.064
+[6,   600] loss: 0.065
+[6,   700] loss: 0.063
+[6,   800] loss: 0.064
+[6,   900] loss: 0.065
+[6,  1000] loss: 0.065
+[7,   100] loss: 0.064
+[7,   200] loss: 0.064
+[7,   300] loss: 0.063
+[7,   400] loss: 0.063
+[7,   500] loss: 0.062
+[7,   600] loss: 0.062
+[7,   700] loss: 0.061
+[7,   800] loss: 0.063
+[7,   900] loss: 0.061
+[7,  1000] loss: 0.061
+[8,   100] loss: 0.060
+[8,   200] loss: 0.060
+[8,   300] loss: 0.060
+[8,   400] loss: 0.060
+[8,   500] loss: 0.059
+[8,   600] loss: 0.060
+[8,   700] loss: 0.060
+[8,   800] loss: 0.060
+[8,   900] loss: 0.058
+[8,  1000] loss: 0.059
+[9,   100] loss: 0.057
+[9,   200] loss: 0.058
+[9,   300] loss: 0.058
+[9,   400] loss: 0.056
+[9,   500] loss: 0.057
+[9,   600] loss: 0.057
+[9,   700] loss: 0.057
+[9,   800] loss: 0.058
+[9,   900] loss: 0.057
+[9,  1000] loss: 0.055
+[10,   100] loss: 0.055
+[10,   200] loss: 0.057
+[10,   300] loss: 0.056
+[10,   400] loss: 0.054
+[10,   500] loss: 0.056
+[10,   600] loss: 0.057
+[10,   700] loss: 0.055
+[10,   800] loss: 0.055
+[10,   900] loss: 0.053
+[10,  1000] loss: 0.054
+[11,   100] loss: 0.052
+[11,   200] loss: 0.054
+[11,   300] loss: 0.054
+[11,   400] loss: 0.054
+[11,   500] loss: 0.053
+[11,   600] loss: 0.053
+[11,   700] loss: 0.052
+[11,   800] loss: 0.055
+[11,   900] loss: 0.052
+[11,  1000] loss: 0.053
+[12,   100] loss: 0.052
+[12,   200] loss: 0.051
+[12,   300] loss: 0.053
+[12,   400] loss: 0.051
+[12,   500] loss: 0.053
+[12,   600] loss: 0.051
+[12,   700] loss: 0.052
+[12,   800] loss: 0.051
+[12,   900] loss: 0.052
+[12,  1000] loss: 0.052
+[13,   100] loss: 0.051
+[13,   200] loss: 0.050
+[13,   300] loss: 0.049
+[13,   400] loss: 0.049
+[13,   500] loss: 0.050
+[13,   600] loss: 0.050
+[13,   700] loss: 0.050
+[13,   800] loss: 0.048
+[13,   900] loss: 0.051
+[13,  1000] loss: 0.050
+[14,   100] loss: 0.047
+[14,   200] loss: 0.048
+[14,   300] loss: 0.048
+[14,   400] loss: 0.049
+[14,   500] loss: 0.048
+[14,   600] loss: 0.048
+[14,   700] loss: 0.049
+[14,   800] loss: 0.050
+[14,   900] loss: 0.049
+[14,  1000] loss: 0.049
+[15,   100] loss: 0.047
+[15,   200] loss: 0.048
+[15,   300] loss: 0.047
+[15,   400] loss: 0.047
+[15,   500] loss: 0.047
+[15,   600] loss: 0.048
+[15,   700] loss: 0.047
+[15,   800] loss: 0.047
+[15,   900] loss: 0.047
+[15,  1000] loss: 0.047
+[16,   100] loss: 0.045
+[16,   200] loss: 0.046
+[16,   300] loss: 0.047
+[16,   400] loss: 0.046
+[16,   500] loss: 0.045
+[16,   600] loss: 0.046
+[16,   700] loss: 0.046
+[16,   800] loss: 0.045
+[16,   900] loss: 0.045
+[16,  1000] loss: 0.045
+[17,   100] loss: 0.046
+[17,   200] loss: 0.045
+[17,   300] loss: 0.044
+[17,   400] loss: 0.044
+[17,   500] loss: 0.044
+[17,   600] loss: 0.045
+[17,   700] loss: 0.044
+[17,   800] loss: 0.044
+[17,   900] loss: 0.045
+[17,  1000] loss: 0.046
+[18,   100] loss: 0.044
+[18,   200] loss: 0.043
+[18,   300] loss: 0.043
+[18,   400] loss: 0.044
+[18,   500] loss: 0.044
+[18,   600] loss: 0.044
+[18,   700] loss: 0.043
+[18,   800] loss: 0.045
+[18,   900] loss: 0.043
+[18,  1000] loss: 0.043
+[19,   100] loss: 0.043
+[19,   200] loss: 0.042
+[19,   300] loss: 0.043
+[19,   400] loss: 0.042
+[19,   500] loss: 0.042
+[19,   600] loss: 0.043
+[19,   700] loss: 0.042
+[19,   800] loss: 0.042
+[19,   900] loss: 0.043
+[19,  1000] loss: 0.043
+[20,   100] loss: 0.040
+[20,   200] loss: 0.041
+[20,   300] loss: 0.042
+[20,   400] loss: 0.042
+[20,   500] loss: 0.041
+[20,   600] loss: 0.042
+[20,   700] loss: 0.040
+[20,   800] loss: 0.042
+[20,   900] loss: 0.042
+[20,  1000] loss: 0.041
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 68 %
+
+Class Accuracy
+
+Accuracy of plane : 85 %
+Accuracy of   car : 79 %
+Accuracy of  bird : 52 %
+Accuracy of   cat : 40 %
+Accuracy of  deer : 65 %
+Accuracy of   dog : 42 %
+Accuracy of  frog : 82 %
+Accuracy of horse : 76 %
+Accuracy of  ship : 84 %
+Accuracy of truck : 78 %
+
+real time:2560.70
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+truck  ship   dog horse
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.114
+[1,   600] loss: 0.113
+[1,   700] loss: 0.111
+[1,   800] loss: 0.107
+[1,   900] loss: 0.103
+[1,  1000] loss: 0.099
+[2,   100] loss: 0.098
+[2,   200] loss: 0.096
+[2,   300] loss: 0.093
+[2,   400] loss: 0.093
+[2,   500] loss: 0.090
+[2,   600] loss: 0.090
+[2,   700] loss: 0.088
+[2,   800] loss: 0.086
+[2,   900] loss: 0.084
+[2,  1000] loss: 0.084
+[3,   100] loss: 0.083
+[3,   200] loss: 0.080
+[3,   300] loss: 0.081
+[3,   400] loss: 0.080
+[3,   500] loss: 0.078
+[3,   600] loss: 0.078
+[3,   700] loss: 0.077
+[3,   800] loss: 0.077
+[3,   900] loss: 0.076
+[3,  1000] loss: 0.077
+[4,   100] loss: 0.075
+[4,   200] loss: 0.074
+[4,   300] loss: 0.073
+[4,   400] loss: 0.074
+[4,   500] loss: 0.072
+[4,   600] loss: 0.072
+[4,   700] loss: 0.072
+[4,   800] loss: 0.072
+[4,   900] loss: 0.072
+[4,  1000] loss: 0.069
+[5,   100] loss: 0.069
+[5,   200] loss: 0.069
+[5,   300] loss: 0.071
+[5,   400] loss: 0.069
+[5,   500] loss: 0.068
+[5,   600] loss: 0.066
+[5,   700] loss: 0.066
+[5,   800] loss: 0.067
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.065
+[6,   100] loss: 0.065
+[6,   200] loss: 0.064
+[6,   300] loss: 0.064
+[6,   400] loss: 0.066
+[6,   500] loss: 0.064
+[6,   600] loss: 0.063
+[6,   700] loss: 0.063
+[6,   800] loss: 0.063
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.063
+[7,   100] loss: 0.061
+[7,   200] loss: 0.062
+[7,   300] loss: 0.061
+[7,   400] loss: 0.061
+[7,   500] loss: 0.061
+[7,   600] loss: 0.061
+[7,   700] loss: 0.060
+[7,   800] loss: 0.060
+[7,   900] loss: 0.060
+[7,  1000] loss: 0.060
+[8,   100] loss: 0.057
+[8,   200] loss: 0.059
+[8,   300] loss: 0.060
+[8,   400] loss: 0.057
+[8,   500] loss: 0.060
+[8,   600] loss: 0.057
+[8,   700] loss: 0.057
+[8,   800] loss: 0.057
+[8,   900] loss: 0.058
+[8,  1000] loss: 0.056
+[9,   100] loss: 0.055
+[9,   200] loss: 0.055
+[9,   300] loss: 0.055
+[9,   400] loss: 0.055
+[9,   500] loss: 0.055
+[9,   600] loss: 0.056
+[9,   700] loss: 0.056
+[9,   800] loss: 0.054
+[9,   900] loss: 0.055
+[9,  1000] loss: 0.055
+[10,   100] loss: 0.053
+[10,   200] loss: 0.054
+[10,   300] loss: 0.053
+[10,   400] loss: 0.054
+[10,   500] loss: 0.051
+[10,   600] loss: 0.053
+[10,   700] loss: 0.053
+[10,   800] loss: 0.053
+[10,   900] loss: 0.052
+[10,  1000] loss: 0.052
+[11,   100] loss: 0.050
+[11,   200] loss: 0.051
+[11,   300] loss: 0.052
+[11,   400] loss: 0.051
+[11,   500] loss: 0.051
+[11,   600] loss: 0.051
+[11,   700] loss: 0.050
+[11,   800] loss: 0.051
+[11,   900] loss: 0.050
+[11,  1000] loss: 0.050
+[12,   100] loss: 0.050
+[12,   200] loss: 0.049
+[12,   300] loss: 0.049
+[12,   400] loss: 0.048
+[12,   500] loss: 0.049
+[12,   600] loss: 0.047
+[12,   700] loss: 0.049
+[12,   800] loss: 0.047
+[12,   900] loss: 0.051
+[12,  1000] loss: 0.050
+[13,   100] loss: 0.046
+[13,   200] loss: 0.047
+[13,   300] loss: 0.047
+[13,   400] loss: 0.048
+[13,   500] loss: 0.047
+[13,   600] loss: 0.048
+[13,   700] loss: 0.047
+[13,   800] loss: 0.046
+[13,   900] loss: 0.046
+[13,  1000] loss: 0.047
+[14,   100] loss: 0.046
+[14,   200] loss: 0.045
+[14,   300] loss: 0.046
+[14,   400] loss: 0.045
+[14,   500] loss: 0.047
+[14,   600] loss: 0.046
+[14,   700] loss: 0.046
+[14,   800] loss: 0.046
+[14,   900] loss: 0.045
+[14,  1000] loss: 0.045
+[15,   100] loss: 0.044
+[15,   200] loss: 0.045
+[15,   300] loss: 0.043
+[15,   400] loss: 0.045
+[15,   500] loss: 0.044
+[15,   600] loss: 0.044
+[15,   700] loss: 0.043
+[15,   800] loss: 0.045
+[15,   900] loss: 0.044
+[15,  1000] loss: 0.044
+[16,   100] loss: 0.043
+[16,   200] loss: 0.043
+[16,   300] loss: 0.043
+[16,   400] loss: 0.043
+[16,   500] loss: 0.044
+[16,   600] loss: 0.042
+[16,   700] loss: 0.042
+[16,   800] loss: 0.043
+[16,   900] loss: 0.042
+[16,  1000] loss: 0.043
+[17,   100] loss: 0.041
+[17,   200] loss: 0.041
+[17,   300] loss: 0.041
+[17,   400] loss: 0.040
+[17,   500] loss: 0.041
+[17,   600] loss: 0.042
+[17,   700] loss: 0.043
+[17,   800] loss: 0.042
+[17,   900] loss: 0.042
+[17,  1000] loss: 0.041
+[18,   100] loss: 0.039
+[18,   200] loss: 0.040
+[18,   300] loss: 0.041
+[18,   400] loss: 0.041
+[18,   500] loss: 0.040
+[18,   600] loss: 0.041
+[18,   700] loss: 0.041
+[18,   800] loss: 0.040
+[18,   900] loss: 0.040
+[18,  1000] loss: 0.040
+[19,   100] loss: 0.040
+[19,   200] loss: 0.038
+[19,   300] loss: 0.039
+[19,   400] loss: 0.038
+[19,   500] loss: 0.039
+[19,   600] loss: 0.040
+[19,   700] loss: 0.040
+[19,   800] loss: 0.041
+[19,   900] loss: 0.039
+[19,  1000] loss: 0.039
+[20,   100] loss: 0.038
+[20,   200] loss: 0.038
+[20,   300] loss: 0.038
+[20,   400] loss: 0.039
+[20,   500] loss: 0.038
+[20,   600] loss: 0.038
+[20,   700] loss: 0.038
+[20,   800] loss: 0.038
+[20,   900] loss: 0.038
+[20,  1000] loss: 0.039
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship plane  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 69 %
+
+Class Accuracy
+
+Accuracy of plane : 79 %
+Accuracy of   car : 72 %
+Accuracy of  bird : 54 %
+Accuracy of   cat : 64 %
+Accuracy of  deer : 64 %
+Accuracy of   dog : 48 %
+Accuracy of  frog : 68 %
+Accuracy of horse : 80 %
+Accuracy of  ship : 89 %
+Accuracy of truck : 82 %
+
+real time:2556.91
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+truck  bird truck  bird
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.114
+[1,   500] loss: 0.113
+[1,   600] loss: 0.111
+[1,   700] loss: 0.108
+[1,   800] loss: 0.104
+[1,   900] loss: 0.100
+[1,  1000] loss: 0.098
+[2,   100] loss: 0.097
+[2,   200] loss: 0.095
+[2,   300] loss: 0.093
+[2,   400] loss: 0.091
+[2,   500] loss: 0.089
+[2,   600] loss: 0.087
+[2,   700] loss: 0.085
+[2,   800] loss: 0.084
+[2,   900] loss: 0.083
+[2,  1000] loss: 0.081
+[3,   100] loss: 0.079
+[3,   200] loss: 0.080
+[3,   300] loss: 0.078
+[3,   400] loss: 0.078
+[3,   500] loss: 0.077
+[3,   600] loss: 0.077
+[3,   700] loss: 0.075
+[3,   800] loss: 0.076
+[3,   900] loss: 0.076
+[3,  1000] loss: 0.074
+[4,   100] loss: 0.074
+[4,   200] loss: 0.073
+[4,   300] loss: 0.072
+[4,   400] loss: 0.073
+[4,   500] loss: 0.073
+[4,   600] loss: 0.071
+[4,   700] loss: 0.071
+[4,   800] loss: 0.071
+[4,   900] loss: 0.070
+[4,  1000] loss: 0.070
+[5,   100] loss: 0.070
+[5,   200] loss: 0.070
+[5,   300] loss: 0.068
+[5,   400] loss: 0.067
+[5,   500] loss: 0.068
+[5,   600] loss: 0.068
+[5,   700] loss: 0.067
+[5,   800] loss: 0.066
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.065
+[6,   100] loss: 0.066
+[6,   200] loss: 0.065
+[6,   300] loss: 0.065
+[6,   400] loss: 0.065
+[6,   500] loss: 0.065
+[6,   600] loss: 0.064
+[6,   700] loss: 0.064
+[6,   800] loss: 0.063
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.061
+[7,   100] loss: 0.061
+[7,   200] loss: 0.061
+[7,   300] loss: 0.062
+[7,   400] loss: 0.061
+[7,   500] loss: 0.061
+[7,   600] loss: 0.061
+[7,   700] loss: 0.060
+[7,   800] loss: 0.060
+[7,   900] loss: 0.060
+[7,  1000] loss: 0.059
+[8,   100] loss: 0.060
+[8,   200] loss: 0.058
+[8,   300] loss: 0.057
+[8,   400] loss: 0.057
+[8,   500] loss: 0.058
+[8,   600] loss: 0.057
+[8,   700] loss: 0.057
+[8,   800] loss: 0.057
+[8,   900] loss: 0.057
+[8,  1000] loss: 0.056
+[9,   100] loss: 0.056
+[9,   200] loss: 0.057
+[9,   300] loss: 0.054
+[9,   400] loss: 0.055
+[9,   500] loss: 0.056
+[9,   600] loss: 0.055
+[9,   700] loss: 0.054
+[9,   800] loss: 0.055
+[9,   900] loss: 0.054
+[9,  1000] loss: 0.054
+[10,   100] loss: 0.053
+[10,   200] loss: 0.052
+[10,   300] loss: 0.054
+[10,   400] loss: 0.054
+[10,   500] loss: 0.053
+[10,   600] loss: 0.053
+[10,   700] loss: 0.052
+[10,   800] loss: 0.053
+[10,   900] loss: 0.052
+[10,  1000] loss: 0.052
+[11,   100] loss: 0.053
+[11,   200] loss: 0.051
+[11,   300] loss: 0.051
+[11,   400] loss: 0.050
+[11,   500] loss: 0.051
+[11,   600] loss: 0.050
+[11,   700] loss: 0.052
+[11,   800] loss: 0.050
+[11,   900] loss: 0.051
+[11,  1000] loss: 0.049
+[12,   100] loss: 0.049
+[12,   200] loss: 0.047
+[12,   300] loss: 0.051
+[12,   400] loss: 0.049
+[12,   500] loss: 0.051
+[12,   600] loss: 0.049
+[12,   700] loss: 0.049
+[12,   800] loss: 0.049
+[12,   900] loss: 0.048
+[12,  1000] loss: 0.048
+[13,   100] loss: 0.048
+[13,   200] loss: 0.047
+[13,   300] loss: 0.049
+[13,   400] loss: 0.047
+[13,   500] loss: 0.046
+[13,   600] loss: 0.048
+[13,   700] loss: 0.048
+[13,   800] loss: 0.047
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.048
+[14,   100] loss: 0.046
+[14,   200] loss: 0.046
+[14,   300] loss: 0.046
+[14,   400] loss: 0.046
+[14,   500] loss: 0.046
+[14,   600] loss: 0.046
+[14,   700] loss: 0.047
+[14,   800] loss: 0.047
+[14,   900] loss: 0.044
+[14,  1000] loss: 0.047
+[15,   100] loss: 0.044
+[15,   200] loss: 0.045
+[15,   300] loss: 0.045
+[15,   400] loss: 0.045
+[15,   500] loss: 0.046
+[15,   600] loss: 0.045
+[15,   700] loss: 0.045
+[15,   800] loss: 0.044
+[15,   900] loss: 0.044
+[15,  1000] loss: 0.044
+[16,   100] loss: 0.044
+[16,   200] loss: 0.044
+[16,   300] loss: 0.042
+[16,   400] loss: 0.044
+[16,   500] loss: 0.044
+[16,   600] loss: 0.042
+[16,   700] loss: 0.042
+[16,   800] loss: 0.045
+[16,   900] loss: 0.044
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.043
+[17,   200] loss: 0.042
+[17,   300] loss: 0.042
+[17,   400] loss: 0.042
+[17,   500] loss: 0.043
+[17,   600] loss: 0.042
+[17,   700] loss: 0.041
+[17,   800] loss: 0.043
+[17,   900] loss: 0.042
+[17,  1000] loss: 0.043
+[18,   100] loss: 0.041
+[18,   200] loss: 0.042
+[18,   300] loss: 0.041
+[18,   400] loss: 0.042
+[18,   500] loss: 0.041
+[18,   600] loss: 0.040
+[18,   700] loss: 0.040
+[18,   800] loss: 0.041
+[18,   900] loss: 0.042
+[18,  1000] loss: 0.041
+[19,   100] loss: 0.039
+[19,   200] loss: 0.039
+[19,   300] loss: 0.041
+[19,   400] loss: 0.040
+[19,   500] loss: 0.040
+[19,   600] loss: 0.040
+[19,   700] loss: 0.041
+[19,   800] loss: 0.040
+[19,   900] loss: 0.040
+[19,  1000] loss: 0.040
+[20,   100] loss: 0.039
+[20,   200] loss: 0.039
+[20,   300] loss: 0.039
+[20,   400] loss: 0.040
+[20,   500] loss: 0.039
+[20,   600] loss: 0.041
+[20,   700] loss: 0.038
+[20,   800] loss: 0.039
+[20,   900] loss: 0.038
+[20,  1000] loss: 0.040
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 68 %
+
+Class Accuracy
+
+Accuracy of plane : 84 %
+Accuracy of   car : 79 %
+Accuracy of  bird : 40 %
+Accuracy of   cat : 48 %
+Accuracy of  deer : 75 %
+Accuracy of   dog : 58 %
+Accuracy of  frog : 70 %
+Accuracy of horse : 74 %
+Accuracy of  ship : 79 %
+Accuracy of truck : 78 %
+
+real time:2558.83
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  car  frog  bird  frog
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.115
+[1,   500] loss: 0.115
+[1,   600] loss: 0.114
+[1,   700] loss: 0.113
+[1,   800] loss: 0.111
+[1,   900] loss: 0.107
+[1,  1000] loss: 0.103
+[2,   100] loss: 0.099
+[2,   200] loss: 0.097
+[2,   300] loss: 0.094
+[2,   400] loss: 0.092
+[2,   500] loss: 0.091
+[2,   600] loss: 0.088
+[2,   700] loss: 0.087
+[2,   800] loss: 0.085
+[2,   900] loss: 0.085
+[2,  1000] loss: 0.082
+[3,   100] loss: 0.081
+[3,   200] loss: 0.081
+[3,   300] loss: 0.079
+[3,   400] loss: 0.079
+[3,   500] loss: 0.077
+[3,   600] loss: 0.078
+[3,   700] loss: 0.076
+[3,   800] loss: 0.076
+[3,   900] loss: 0.077
+[3,  1000] loss: 0.074
+[4,   100] loss: 0.075
+[4,   200] loss: 0.074
+[4,   300] loss: 0.074
+[4,   400] loss: 0.074
+[4,   500] loss: 0.072
+[4,   600] loss: 0.072
+[4,   700] loss: 0.071
+[4,   800] loss: 0.071
+[4,   900] loss: 0.070
+[4,  1000] loss: 0.071
+[5,   100] loss: 0.069
+[5,   200] loss: 0.070
+[5,   300] loss: 0.069
+[5,   400] loss: 0.068
+[5,   500] loss: 0.068
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.067
+[5,   900] loss: 0.068
+[5,  1000] loss: 0.067
+[6,   100] loss: 0.066
+[6,   200] loss: 0.065
+[6,   300] loss: 0.065
+[6,   400] loss: 0.066
+[6,   500] loss: 0.065
+[6,   600] loss: 0.065
+[6,   700] loss: 0.064
+[6,   800] loss: 0.063
+[6,   900] loss: 0.065
+[6,  1000] loss: 0.063
+[7,   100] loss: 0.063
+[7,   200] loss: 0.063
+[7,   300] loss: 0.062
+[7,   400] loss: 0.061
+[7,   500] loss: 0.064
+[7,   600] loss: 0.061
+[7,   700] loss: 0.061
+[7,   800] loss: 0.061
+[7,   900] loss: 0.061
+[7,  1000] loss: 0.061
+[8,   100] loss: 0.059
+[8,   200] loss: 0.059
+[8,   300] loss: 0.059
+[8,   400] loss: 0.059
+[8,   500] loss: 0.059
+[8,   600] loss: 0.061
+[8,   700] loss: 0.058
+[8,   800] loss: 0.058
+[8,   900] loss: 0.058
+[8,  1000] loss: 0.058
+[9,   100] loss: 0.057
+[9,   200] loss: 0.056
+[9,   300] loss: 0.056
+[9,   400] loss: 0.057
+[9,   500] loss: 0.056
+[9,   600] loss: 0.056
+[9,   700] loss: 0.057
+[9,   800] loss: 0.058
+[9,   900] loss: 0.055
+[9,  1000] loss: 0.056
+[10,   100] loss: 0.055
+[10,   200] loss: 0.055
+[10,   300] loss: 0.053
+[10,   400] loss: 0.054
+[10,   500] loss: 0.055
+[10,   600] loss: 0.054
+[10,   700] loss: 0.054
+[10,   800] loss: 0.054
+[10,   900] loss: 0.054
+[10,  1000] loss: 0.054
+[11,   100] loss: 0.052
+[11,   200] loss: 0.052
+[11,   300] loss: 0.052
+[11,   400] loss: 0.055
+[11,   500] loss: 0.051
+[11,   600] loss: 0.053
+[11,   700] loss: 0.052
+[11,   800] loss: 0.053
+[11,   900] loss: 0.050
+[11,  1000] loss: 0.050
+[12,   100] loss: 0.051
+[12,   200] loss: 0.050
+[12,   300] loss: 0.050
+[12,   400] loss: 0.050
+[12,   500] loss: 0.052
+[12,   600] loss: 0.051
+[12,   700] loss: 0.051
+[12,   800] loss: 0.049
+[12,   900] loss: 0.051
+[12,  1000] loss: 0.049
+[13,   100] loss: 0.049
+[13,   200] loss: 0.050
+[13,   300] loss: 0.049
+[13,   400] loss: 0.049
+[13,   500] loss: 0.048
+[13,   600] loss: 0.049
+[13,   700] loss: 0.048
+[13,   800] loss: 0.049
+[13,   900] loss: 0.049
+[13,  1000] loss: 0.048
+[14,   100] loss: 0.047
+[14,   200] loss: 0.046
+[14,   300] loss: 0.048
+[14,   400] loss: 0.047
+[14,   500] loss: 0.046
+[14,   600] loss: 0.047
+[14,   700] loss: 0.048
+[14,   800] loss: 0.047
+[14,   900] loss: 0.048
+[14,  1000] loss: 0.047
+[15,   100] loss: 0.047
+[15,   200] loss: 0.046
+[15,   300] loss: 0.047
+[15,   400] loss: 0.046
+[15,   500] loss: 0.046
+[15,   600] loss: 0.046
+[15,   700] loss: 0.046
+[15,   800] loss: 0.045
+[15,   900] loss: 0.045
+[15,  1000] loss: 0.045
+[16,   100] loss: 0.043
+[16,   200] loss: 0.046
+[16,   300] loss: 0.043
+[16,   400] loss: 0.045
+[16,   500] loss: 0.044
+[16,   600] loss: 0.045
+[16,   700] loss: 0.044
+[16,   800] loss: 0.046
+[16,   900] loss: 0.046
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.043
+[17,   200] loss: 0.043
+[17,   300] loss: 0.043
+[17,   400] loss: 0.043
+[17,   500] loss: 0.043
+[17,   600] loss: 0.043
+[17,   700] loss: 0.043
+[17,   800] loss: 0.043
+[17,   900] loss: 0.042
+[17,  1000] loss: 0.044
+[18,   100] loss: 0.041
+[18,   200] loss: 0.043
+[18,   300] loss: 0.043
+[18,   400] loss: 0.042
+[18,   500] loss: 0.041
+[18,   600] loss: 0.041
+[18,   700] loss: 0.042
+[18,   800] loss: 0.042
+[18,   900] loss: 0.041
+[18,  1000] loss: 0.042
+[19,   100] loss: 0.040
+[19,   200] loss: 0.040
+[19,   300] loss: 0.040
+[19,   400] loss: 0.041
+[19,   500] loss: 0.041
+[19,   600] loss: 0.039
+[19,   700] loss: 0.042
+[19,   800] loss: 0.041
+[19,   900] loss: 0.042
+[19,  1000] loss: 0.041
+[20,   100] loss: 0.039
+[20,   200] loss: 0.041
+[20,   300] loss: 0.040
+[20,   400] loss: 0.040
+[20,   500] loss: 0.039
+[20,   600] loss: 0.040
+[20,   700] loss: 0.040
+[20,   800] loss: 0.040
+[20,   900] loss: 0.040
+[20,  1000] loss: 0.040
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    dog   car  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 68 %
+
+Class Accuracy
+
+Accuracy of plane : 79 %
+Accuracy of   car : 80 %
+Accuracy of  bird : 59 %
+Accuracy of   cat : 43 %
+Accuracy of  deer : 53 %
+Accuracy of   dog : 63 %
+Accuracy of  frog : 89 %
+Accuracy of horse : 82 %
+Accuracy of  ship : 81 %
+Accuracy of truck : 83 %
+
+real time:2558.51
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 50
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  cat   car  frog plane
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[1,   300] loss: 0.115
+[1,   400] loss: 0.114
+[1,   500] loss: 0.114
+[1,   600] loss: 0.111
+[1,   700] loss: 0.107
+[1,   800] loss: 0.105
+[1,   900] loss: 0.101
+[1,  1000] loss: 0.099
+[2,   100] loss: 0.097
+[2,   200] loss: 0.095
+[2,   300] loss: 0.093
+[2,   400] loss: 0.092
+[2,   500] loss: 0.091
+[2,   600] loss: 0.088
+[2,   700] loss: 0.087
+[2,   800] loss: 0.086
+[2,   900] loss: 0.084
+[2,  1000] loss: 0.082
+[3,   100] loss: 0.082
+[3,   200] loss: 0.081
+[3,   300] loss: 0.079
+[3,   400] loss: 0.079
+[3,   500] loss: 0.078
+[3,   600] loss: 0.077
+[3,   700] loss: 0.077
+[3,   800] loss: 0.078
+[3,   900] loss: 0.075
+[3,  1000] loss: 0.075
+[4,   100] loss: 0.075
+[4,   200] loss: 0.074
+[4,   300] loss: 0.073
+[4,   400] loss: 0.073
+[4,   500] loss: 0.072
+[4,   600] loss: 0.072
+[4,   700] loss: 0.071
+[4,   800] loss: 0.072
+[4,   900] loss: 0.071
+[4,  1000] loss: 0.070
+[5,   100] loss: 0.070
+[5,   200] loss: 0.070
+[5,   300] loss: 0.068
+[5,   400] loss: 0.068
+[5,   500] loss: 0.069
+[5,   600] loss: 0.068
+[5,   700] loss: 0.068
+[5,   800] loss: 0.067
+[5,   900] loss: 0.067
+[5,  1000] loss: 0.067
+[6,   100] loss: 0.066
+[6,   200] loss: 0.066
+[6,   300] loss: 0.066
+[6,   400] loss: 0.065
+[6,   500] loss: 0.064
+[6,   600] loss: 0.066
+[6,   700] loss: 0.064
+[6,   800] loss: 0.063
+[6,   900] loss: 0.063
+[6,  1000] loss: 0.064
+[7,   100] loss: 0.063
+[7,   200] loss: 0.063
+[7,   300] loss: 0.062
+[7,   400] loss: 0.063
+[7,   500] loss: 0.061
+[7,   600] loss: 0.061
+[7,   700] loss: 0.062
+[7,   800] loss: 0.061
+[7,   900] loss: 0.061
+[7,  1000] loss: 0.059
+[8,   100] loss: 0.060
+[8,   200] loss: 0.059
+[8,   300] loss: 0.059
+[8,   400] loss: 0.059
+[8,   500] loss: 0.058
+[8,   600] loss: 0.059
+[8,   700] loss: 0.059
+[8,   800] loss: 0.058
+[8,   900] loss: 0.056
+[8,  1000] loss: 0.059
+[9,   100] loss: 0.058
+[9,   200] loss: 0.057
+[9,   300] loss: 0.056
+[9,   400] loss: 0.057
+[9,   500] loss: 0.054
+[9,   600] loss: 0.054
+[9,   700] loss: 0.055
+[9,   800] loss: 0.054
+[9,   900] loss: 0.056
+[9,  1000] loss: 0.056
+[10,   100] loss: 0.054
+[10,   200] loss: 0.052
+[10,   300] loss: 0.054
+[10,   400] loss: 0.054
+[10,   500] loss: 0.053
+[10,   600] loss: 0.053
+[10,   700] loss: 0.053
+[10,   800] loss: 0.053
+[10,   900] loss: 0.054
+[10,  1000] loss: 0.052
+[11,   100] loss: 0.052
+[11,   200] loss: 0.050
+[11,   300] loss: 0.053
+[11,   400] loss: 0.051
+[11,   500] loss: 0.051
+[11,   600] loss: 0.051
+[11,   700] loss: 0.051
+[11,   800] loss: 0.051
+[11,   900] loss: 0.052
+[11,  1000] loss: 0.050
+[12,   100] loss: 0.049
+[12,   200] loss: 0.050
+[12,   300] loss: 0.049
+[12,   400] loss: 0.050
+[12,   500] loss: 0.049
+[12,   600] loss: 0.050
+[12,   700] loss: 0.049
+[12,   800] loss: 0.050
+[12,   900] loss: 0.048
+[12,  1000] loss: 0.050
+[13,   100] loss: 0.048
+[13,   200] loss: 0.047
+[13,   300] loss: 0.049
+[13,   400] loss: 0.048
+[13,   500] loss: 0.049
+[13,   600] loss: 0.047
+[13,   700] loss: 0.047
+[13,   800] loss: 0.048
+[13,   900] loss: 0.047
+[13,  1000] loss: 0.047
+[14,   100] loss: 0.048
+[14,   200] loss: 0.046
+[14,   300] loss: 0.047
+[14,   400] loss: 0.046
+[14,   500] loss: 0.046
+[14,   600] loss: 0.046
+[14,   700] loss: 0.047
+[14,   800] loss: 0.046
+[14,   900] loss: 0.045
+[14,  1000] loss: 0.045
+[15,   100] loss: 0.046
+[15,   200] loss: 0.044
+[15,   300] loss: 0.046
+[15,   400] loss: 0.045
+[15,   500] loss: 0.046
+[15,   600] loss: 0.045
+[15,   700] loss: 0.045
+[15,   800] loss: 0.045
+[15,   900] loss: 0.044
+[15,  1000] loss: 0.043
+[16,   100] loss: 0.043
+[16,   200] loss: 0.044
+[16,   300] loss: 0.043
+[16,   400] loss: 0.043
+[16,   500] loss: 0.044
+[16,   600] loss: 0.042
+[16,   700] loss: 0.043
+[16,   800] loss: 0.045
+[16,   900] loss: 0.043
+[16,  1000] loss: 0.044
+[17,   100] loss: 0.042
+[17,   200] loss: 0.043
+[17,   300] loss: 0.042
+[17,   400] loss: 0.043
+[17,   500] loss: 0.042
+[17,   600] loss: 0.042
+[17,   700] loss: 0.042
+[17,   800] loss: 0.044
+[17,   900] loss: 0.041
+[17,  1000] loss: 0.042
+[18,   100] loss: 0.042
+[18,   200] loss: 0.042
+[18,   300] loss: 0.040
+[18,   400] loss: 0.039
+[18,   500] loss: 0.043
+[18,   600] loss: 0.042
+[18,   700] loss: 0.042
+[18,   800] loss: 0.040
+[18,   900] loss: 0.040
+[18,  1000] loss: 0.040
+[19,   100] loss: 0.040
+[19,   200] loss: 0.039
+[19,   300] loss: 0.040
+[19,   400] loss: 0.040
+[19,   500] loss: 0.040
+[19,   600] loss: 0.041
+[19,   700] loss: 0.039
+[19,   800] loss: 0.042
+[19,   900] loss: 0.039
+[19,  1000] loss: 0.041
+[20,   100] loss: 0.038
+[20,   200] loss: 0.039
+[20,   300] loss: 0.039
+[20,   400] loss: 0.038
+[20,   500] loss: 0.039
+[20,   600] loss: 0.038
+[20,   700] loss: 0.040
+[20,   800] loss: 0.039
+[20,   900] loss: 0.038
+[20,  1000] loss: 0.038
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat   car plane plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 69 %
+
+Class Accuracy
+
+Accuracy of plane : 83 %
+Accuracy of   car : 83 %
+Accuracy of  bird : 51 %
+Accuracy of   cat : 33 %
+Accuracy of  deer : 71 %
+Accuracy of   dog : 62 %
+Accuracy of  frog : 77 %
+Accuracy of horse : 80 %
+Accuracy of  ship : 77 %
+Accuracy of truck : 67 %
+
+real time:2559.78

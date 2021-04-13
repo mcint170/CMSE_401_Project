@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH --qos=normal
+#SBATCH -n 1
+#SBATCH --time=24:00:00
+#SBATCH --mem=40G
+#SBATCH -o slurm.CPU.%j.out 
+
+module load Anaconda/3
+
+conda activate pytorch_classifier
+
+# Load in Data to make timing fair
+python data_load.py
+
+file="./timing/cpu.txt"
+
+echo "batch,time,accuracy" > $file
+
+# Loop through different batch sizes
+for batch in 50 100 150 200 250;
+do
+tmp="./timing/cpu_tmp_${batch}.txt"
+echo "" > $tmp
+    for n in {1..10};
+    do
+        echo "Iteration $n : Batch Size $batch"
+        /usr/bin/time -f '\nreal time:%e' srun python cpu_classifier.py $batch &>> $tmp
+    done
+
+# Save results to plot later
+avtime=`cat $tmp | grep real | cut -d ":" -f 2 | jq -s add/length`
+avaccuracy=`cat $tmp | grep 'Accuracy of the network' | cut -d ":" -f 2 | cut -d " " -f 2 | jq -s add/length`
+
+echo "${batch},${avtime},${avaccuracy}" >> $file
+
+done
+
+js -j ${SLURM_JOBID}

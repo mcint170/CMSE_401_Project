@@ -1,19 +1,28 @@
-**Disclaimer:**
+**Disclaimer 1:**
+This was the original code I was trying to parallelize with mutltiple GPU.
+I realized after searching for awhile through the bugs I was getting that
+this code is not Multi GPU Parallelizable. This is due to the fact that the 
+neural network used to train the code only uses a batch size of 1. The issue
+with that is the way PyTorch Parallelizes with multiple GPU is sending out
+the different batches to each GPU. Since there is only 1 GPU this means
+that there is a no go for parallelizing.
+
+But this does not mean that this example doesn't work. In fact it is fully
+functioning besides for the multi-GPU parallelization. Follow the instructions
+in ***Set Up** to get this working. Note that you will need to use a terminal
+with X11 support. I suggest using a interactive desktop on the HPCC becuase
+this will allow for the smoothest rendering of the visualization.
+
+**Disclaimer 2:**
 Please note, that most of this folders content, `MariOh/`, is from [here](https://github.com/yuansongFeng/MadMario/).
 For example most of this README was not written by me.
 
 Credit must be given to Yuansong Feng, Suraj Subramanian, Howard Wang, and Steven Guo.
 
 My edits to any of the files will include a tag **(BM)** to indicate that I altered
-that line/surrounding content. If a file was completely written by me I will include it in the list
-below.
-
-Files I created:
-* Mario.sb
-
-Also any instructions specific to the HPCC should be assumed to be written by 
+that line/surrounding content. Any submission scripts should assumed to be created
+by me. Also any instructions specific to the HPCC should be assumed to be written by 
 myself.
-
 
 # MadMario
 PyTorch [official tutorial](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html) to build an AI-powered Mario.
@@ -21,19 +30,18 @@ PyTorch [official tutorial](https://pytorch.org/tutorials/intermediate/mario_rl_
 ## Set Up
 (Recommendation for X11 forwarding) **(BM)**  
 * Create an Interctive Desktop on HPCC's [OnDemand](https://ondemand.hpcc.msu.edu/) for 1 hour,
-with 1 core, 15 Gigabytes, Node type either `intel16` or `amd20`,and request 1 GPU. This will be useful later because we can use the already-baked-in
+with 1 core, 15 Gigabytes, and any node. This will be useful later because we can use the already-baked-in
 X11 forwarding to visualize how well our simulation did!
 * Once logged into the desktop you will want to start the terminal by clicking 
-the icon on the top-left of the screen, `System Tools`, and finally `Terminal`
-* Run the command `nvida-smi` to make sure the graphics card is NOT `K20`, the K20
-graphics card does not work with pytorch unfortunetly.
+the icon on the top-left of the screen, `System Tools`, and finally `Terminal`.
+* You can clone this repository with this address https://github.com/mcint170/CMSE_401_Project.git
 (End Recomendation)
 
 1. Have Anaconda 3 installed. If you do not have Anaconda installed, see the [README](../pytorch_classifier/README.md) file
 in `../pytorch_classifier` and follow the instructions under 
 **INSTALL Anaconda 3 w/ Python 3.8**. **(BM)**
 3. (If using instructions in Part 1, or do not have conda activated at startup)
-The module `Anaconda /3` will need to be loaded with **(BM)**
+The module `Anaconda/3` will need to be loaded with **(BM)**
 ```bash
 module load Anaconda/3
 ```
@@ -41,8 +49,6 @@ module load Anaconda/3
 ```bash
 conda env create -f environment.yml
 ```
-Check the new environment *mario* is [created successfully](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
-
 3. Activate *mario* enviroment
 ```bash
 conda activate mario
@@ -50,35 +56,34 @@ conda activate mario
 
 
 ## Running Mario (BM)
-There are two folders on this respository  
-
-**single_GPU/**  
-This is the original code, that only uses 1 GPU
+The main files you will need are already in this main folder. I also have in this respository  
 
 **mulit_GPU/**
-This is my modified code, that uses more than 1 GPU
+This is my (BROKEN) modified code, that uses more than 1 GPU
 
-You can navigate to either folder and follow the instructions below. They function
-identically besides the number of GPU trained with.
+You can stay in this main folder and follow the instructions below.
 
 To manually start the **learning** process for Mario we can run the following,
-```
+```bash
 make test
 ```
 This starts the *double Q-learning* for 10 epochs and logs key training metrics to `checkpoints`. 
-In addition, a copy of `MarioNet` and current exploration rate will be saved. We will use the saved checkpoint
-to visualize the machiene playing mario.
+In addition, a copy of `MarioNet` and current exploration rate will be saved.
+(Note this can take awhile to run)
 
-A single GPU will automatically be used if available.
-
-To **visualize** our Mario we can run,
+We can use the saved checkpoint to visualize the machiene playing mario with the following
+```bash
+make visual_test
 ```
+Or for more fun, you can visualized an already trained model with
+
+```bash
 make visual
 ```
-This visualizes Mario playing the game in a window (why we needed X11). Performance metrics 
+Both of these commands visualizes Mario playing the game in a window (why we needed X11). Performance metrics 
 also will be logged to a new folder under `checkpoints`. You can change the `checkpoint` variable, 
-[FIXME]e.g. `checkpoints/2021-06-06T22-00-00`, in `Mario.load()` to check a specific timestamp if you 
-would like. But it currently setup to use the checkpoint from the full trained model. 
+[FIXME]e.g. `checkpoints/2021-06-06T22-00-00`, in `replay.py` with `checkpoint` variable that is used in `Mario.load()` 
+to check a specific timestamp if you would like.
 
 ## Project Structure 
 This folder: **(BM)**  
@@ -89,10 +94,14 @@ Interactive tutorial with extensive explanation and feedback. Run it on [Google 
 **enviroment.yml**
 Used to construct working enviroment to run code. Was altered to work on HPCC **(BM)**
 
-In both `single_GPU/` and `multi_GPU` **(BM)**  
+In main folder and `multi_GPU` **(BM)**  
 
 **main.py**
 Main loop between Environment and Mario
+
+**replay.py**
+Essentaially does the samething as Main, but is pre-setup with a well trained
+model, and will visualize the game as it is being played. **(BM)**
 
 **agent.py**
 Define how the agent collects experiences, makes actions given observations and updates the action policy.
