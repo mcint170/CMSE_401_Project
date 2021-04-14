@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --qos=normal
 #SBATCH -n 1
-#SBATCH --time=38:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mem=40G
-#SBATCH -o slurm.CPU.%j.out 
+#SBATCH -o slurm.CPU_200.%j.out 
 
 module load Anaconda/3
 
@@ -14,25 +14,18 @@ python data_load.py
 
 file="./timing/cpu.txt"
 
-echo "batch,time,accuracy" > $file
-
 # Loop through different batch sizes
-for batch in 50 100 150 200 250;
+tmp="./timing/cpu_tmp_200.txt"
+for n in {3..10};
 do
-tmp="./timing/cpu_tmp_${batch}.txt"
-echo "" > $tmp
-    for n in {1..10};
-    do
-        echo "Iteration $n : Batch Size $batch"
-        /usr/bin/time -f '\nreal time:%e' srun python cpu_classifier.py $batch &>> $tmp
-    done
+    echo "Iteration $n : Batch Size 200"
+    /usr/bin/time -f '\nreal time:%e' srun python cpu_classifier.py 200 &>> $tmp
+done
 
 # Save results to plot later
 avtime=`cat $tmp | grep real | cut -d ":" -f 2 | jq -s add/length`
 avaccuracy=`cat $tmp | grep 'Accuracy of the network' | cut -d ":" -f 2 | cut -d " " -f 2 | jq -s add/length`
 
-echo "${batch},${avtime},${avaccuracy}" >> $file
-
-done
+echo "200,${avtime},${avaccuracy}" >> $file
 
 js -j ${SLURM_JOBID}

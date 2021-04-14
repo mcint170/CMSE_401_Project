@@ -1,0 +1,901 @@
+
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  dog  frog truck horse
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.112
+[3,   200] loss: 0.109
+[4,   100] loss: 0.104
+[4,   200] loss: 0.101
+[5,   100] loss: 0.098
+[5,   200] loss: 0.097
+[6,   100] loss: 0.093
+[6,   200] loss: 0.092
+[7,   100] loss: 0.089
+[7,   200] loss: 0.087
+[8,   100] loss: 0.084
+[8,   200] loss: 0.083
+[9,   100] loss: 0.081
+[9,   200] loss: 0.080
+[10,   100] loss: 0.078
+[10,   200] loss: 0.078
+[11,   100] loss: 0.077
+[11,   200] loss: 0.076
+[12,   100] loss: 0.075
+[12,   200] loss: 0.074
+[13,   100] loss: 0.073
+[13,   200] loss: 0.073
+[14,   100] loss: 0.071
+[14,   200] loss: 0.071
+[15,   100] loss: 0.071
+[15,   200] loss: 0.069
+[16,   100] loss: 0.068
+[16,   200] loss: 0.068
+[17,   100] loss: 0.067
+[17,   200] loss: 0.067
+[18,   100] loss: 0.066
+[18,   200] loss: 0.065
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.063
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat   car  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 54 %
+
+Class Accuracy
+
+Accuracy of plane : 59 %
+Accuracy of   car : 76 %
+Accuracy of  bird : 36 %
+Accuracy of   cat : 47 %
+Accuracy of  deer : 29 %
+Accuracy of   dog : 46 %
+Accuracy of  frog : 68 %
+Accuracy of horse : 68 %
+Accuracy of  ship : 52 %
+Accuracy of truck : 85 %
+
+real time:2783.02
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+plane   dog   dog   car
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.112
+[3,   200] loss: 0.109
+[4,   100] loss: 0.102
+[4,   200] loss: 0.098
+[5,   100] loss: 0.096
+[5,   200] loss: 0.093
+[6,   100] loss: 0.091
+[6,   200] loss: 0.089
+[7,   100] loss: 0.085
+[7,   200] loss: 0.084
+[8,   100] loss: 0.082
+[8,   200] loss: 0.081
+[9,   100] loss: 0.079
+[9,   200] loss: 0.079
+[10,   100] loss: 0.077
+[10,   200] loss: 0.077
+[11,   100] loss: 0.076
+[11,   200] loss: 0.075
+[12,   100] loss: 0.074
+[12,   200] loss: 0.072
+[13,   100] loss: 0.072
+[13,   200] loss: 0.072
+[14,   100] loss: 0.071
+[14,   200] loss: 0.071
+[15,   100] loss: 0.069
+[15,   200] loss: 0.069
+[16,   100] loss: 0.068
+[16,   200] loss: 0.068
+[17,   100] loss: 0.067
+[17,   200] loss: 0.067
+[18,   100] loss: 0.066
+[18,   200] loss: 0.066
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.064
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 50 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 42 %
+Accuracy of   cat : 34 %
+Accuracy of  deer : 33 %
+Accuracy of   dog : 33 %
+Accuracy of  frog : 59 %
+Accuracy of horse : 81 %
+Accuracy of  ship : 72 %
+Accuracy of truck : 78 %
+
+real time:2620.38
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+plane  frog horse  bird
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.115
+[3,   100] loss: 0.114
+[3,   200] loss: 0.113
+[4,   100] loss: 0.109
+[4,   200] loss: 0.105
+[5,   100] loss: 0.100
+[5,   200] loss: 0.098
+[6,   100] loss: 0.094
+[6,   200] loss: 0.092
+[7,   100] loss: 0.089
+[7,   200] loss: 0.087
+[8,   100] loss: 0.085
+[8,   200] loss: 0.084
+[9,   100] loss: 0.081
+[9,   200] loss: 0.081
+[10,   100] loss: 0.079
+[10,   200] loss: 0.078
+[11,   100] loss: 0.077
+[11,   200] loss: 0.076
+[12,   100] loss: 0.075
+[12,   200] loss: 0.074
+[13,   100] loss: 0.073
+[13,   200] loss: 0.072
+[14,   100] loss: 0.071
+[14,   200] loss: 0.071
+[15,   100] loss: 0.070
+[15,   200] loss: 0.069
+[16,   100] loss: 0.069
+[16,   200] loss: 0.068
+[17,   100] loss: 0.068
+[17,   200] loss: 0.067
+[18,   100] loss: 0.067
+[18,   200] loss: 0.066
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.064
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 50 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 36 %
+Accuracy of   cat : 43 %
+Accuracy of  deer : 25 %
+Accuracy of   dog : 33 %
+Accuracy of  frog : 68 %
+Accuracy of horse : 56 %
+Accuracy of  ship : 84 %
+Accuracy of truck : 92 %
+
+real time:1381.57
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+horse  deer  frog truck
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.115
+[3,   100] loss: 0.114
+[3,   200] loss: 0.112
+[4,   100] loss: 0.107
+[4,   200] loss: 0.102
+[5,   100] loss: 0.098
+[5,   200] loss: 0.096
+[6,   100] loss: 0.093
+[6,   200] loss: 0.092
+[7,   100] loss: 0.089
+[7,   200] loss: 0.087
+[8,   100] loss: 0.085
+[8,   200] loss: 0.084
+[9,   100] loss: 0.082
+[9,   200] loss: 0.081
+[10,   100] loss: 0.080
+[10,   200] loss: 0.079
+[11,   100] loss: 0.078
+[11,   200] loss: 0.077
+[12,   100] loss: 0.076
+[12,   200] loss: 0.075
+[13,   100] loss: 0.075
+[13,   200] loss: 0.074
+[14,   100] loss: 0.073
+[14,   200] loss: 0.072
+[15,   100] loss: 0.072
+[15,   200] loss: 0.071
+[16,   100] loss: 0.070
+[16,   200] loss: 0.070
+[17,   100] loss: 0.069
+[17,   200] loss: 0.069
+[18,   100] loss: 0.067
+[18,   200] loss: 0.067
+[19,   100] loss: 0.067
+[19,   200] loss: 0.066
+[20,   100] loss: 0.065
+[20,   200] loss: 0.065
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship   car  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 50 %
+Accuracy of   car : 64 %
+Accuracy of  bird : 31 %
+Accuracy of   cat : 43 %
+Accuracy of  deer : 40 %
+Accuracy of   dog : 53 %
+Accuracy of  frog : 59 %
+Accuracy of horse : 75 %
+Accuracy of  ship : 64 %
+Accuracy of truck : 64 %
+
+real time:1315.16
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+horse truck horse plane
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.113
+[3,   200] loss: 0.110
+[4,   100] loss: 0.103
+[4,   200] loss: 0.100
+[5,   100] loss: 0.096
+[5,   200] loss: 0.094
+[6,   100] loss: 0.091
+[6,   200] loss: 0.089
+[7,   100] loss: 0.086
+[7,   200] loss: 0.085
+[8,   100] loss: 0.082
+[8,   200] loss: 0.081
+[9,   100] loss: 0.079
+[9,   200] loss: 0.079
+[10,   100] loss: 0.077
+[10,   200] loss: 0.077
+[11,   100] loss: 0.075
+[11,   200] loss: 0.075
+[12,   100] loss: 0.074
+[12,   200] loss: 0.073
+[13,   100] loss: 0.072
+[13,   200] loss: 0.072
+[14,   100] loss: 0.071
+[14,   200] loss: 0.071
+[15,   100] loss: 0.069
+[15,   200] loss: 0.070
+[16,   100] loss: 0.068
+[16,   200] loss: 0.068
+[17,   100] loss: 0.067
+[17,   200] loss: 0.067
+[18,   100] loss: 0.066
+[18,   200] loss: 0.066
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.064
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 50 %
+Accuracy of   car : 76 %
+Accuracy of  bird : 26 %
+Accuracy of   cat : 56 %
+Accuracy of  deer : 40 %
+Accuracy of   dog : 33 %
+Accuracy of  frog : 72 %
+Accuracy of horse : 68 %
+Accuracy of  ship : 72 %
+Accuracy of truck : 78 %
+
+real time:1365.66
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ ship  frog  ship   dog
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.112
+[3,   200] loss: 0.108
+[4,   100] loss: 0.103
+[4,   200] loss: 0.100
+[5,   100] loss: 0.097
+[5,   200] loss: 0.095
+[6,   100] loss: 0.093
+[6,   200] loss: 0.091
+[7,   100] loss: 0.088
+[7,   200] loss: 0.086
+[8,   100] loss: 0.083
+[8,   200] loss: 0.082
+[9,   100] loss: 0.079
+[9,   200] loss: 0.079
+[10,   100] loss: 0.077
+[10,   200] loss: 0.076
+[11,   100] loss: 0.075
+[11,   200] loss: 0.074
+[12,   100] loss: 0.073
+[12,   200] loss: 0.073
+[13,   100] loss: 0.072
+[13,   200] loss: 0.071
+[14,   100] loss: 0.071
+[14,   200] loss: 0.070
+[15,   100] loss: 0.070
+[15,   200] loss: 0.069
+[16,   100] loss: 0.068
+[16,   200] loss: 0.068
+[17,   100] loss: 0.067
+[17,   200] loss: 0.067
+[18,   100] loss: 0.066
+[18,   200] loss: 0.066
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.064
+[20,   200] loss: 0.063
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship   car  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 54 %
+
+Class Accuracy
+
+Accuracy of plane : 50 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 52 %
+Accuracy of   cat : 56 %
+Accuracy of  deer : 40 %
+Accuracy of   dog : 33 %
+Accuracy of  frog : 59 %
+Accuracy of horse : 68 %
+Accuracy of  ship : 68 %
+Accuracy of truck : 64 %
+
+real time:1463.04
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  dog  bird  ship horse
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.115
+[3,   100] loss: 0.114
+[3,   200] loss: 0.114
+[4,   100] loss: 0.111
+[4,   200] loss: 0.106
+[5,   100] loss: 0.101
+[5,   200] loss: 0.098
+[6,   100] loss: 0.095
+[6,   200] loss: 0.093
+[7,   100] loss: 0.090
+[7,   200] loss: 0.089
+[8,   100] loss: 0.086
+[8,   200] loss: 0.085
+[9,   100] loss: 0.083
+[9,   200] loss: 0.082
+[10,   100] loss: 0.080
+[10,   200] loss: 0.080
+[11,   100] loss: 0.078
+[11,   200] loss: 0.078
+[12,   100] loss: 0.076
+[12,   200] loss: 0.076
+[13,   100] loss: 0.075
+[13,   200] loss: 0.075
+[14,   100] loss: 0.074
+[14,   200] loss: 0.073
+[15,   100] loss: 0.072
+[15,   200] loss: 0.072
+[16,   100] loss: 0.071
+[16,   200] loss: 0.070
+[17,   100] loss: 0.070
+[17,   200] loss: 0.069
+[18,   100] loss: 0.068
+[18,   200] loss: 0.068
+[19,   100] loss: 0.068
+[19,   200] loss: 0.067
+[20,   100] loss: 0.067
+[20,   200] loss: 0.066
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 52 %
+
+Class Accuracy
+
+Accuracy of plane : 45 %
+Accuracy of   car : 64 %
+Accuracy of  bird : 36 %
+Accuracy of   cat : 43 %
+Accuracy of  deer : 29 %
+Accuracy of   dog : 40 %
+Accuracy of  frog : 77 %
+Accuracy of horse : 62 %
+Accuracy of  ship : 64 %
+Accuracy of truck : 64 %
+
+real time:1400.23
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  cat horse plane   dog
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.114
+[2,   200] loss: 0.113
+[3,   100] loss: 0.109
+[3,   200] loss: 0.105
+[4,   100] loss: 0.100
+[4,   200] loss: 0.099
+[5,   100] loss: 0.096
+[5,   200] loss: 0.095
+[6,   100] loss: 0.093
+[6,   200] loss: 0.091
+[7,   100] loss: 0.088
+[7,   200] loss: 0.087
+[8,   100] loss: 0.084
+[8,   200] loss: 0.083
+[9,   100] loss: 0.081
+[9,   200] loss: 0.081
+[10,   100] loss: 0.079
+[10,   200] loss: 0.078
+[11,   100] loss: 0.078
+[11,   200] loss: 0.077
+[12,   100] loss: 0.076
+[12,   200] loss: 0.075
+[13,   100] loss: 0.074
+[13,   200] loss: 0.074
+[14,   100] loss: 0.072
+[14,   200] loss: 0.072
+[15,   100] loss: 0.071
+[15,   200] loss: 0.071
+[16,   100] loss: 0.070
+[16,   200] loss: 0.070
+[17,   100] loss: 0.069
+[17,   200] loss: 0.068
+[18,   100] loss: 0.067
+[18,   200] loss: 0.066
+[19,   100] loss: 0.066
+[19,   200] loss: 0.066
+[20,   100] loss: 0.065
+[20,   200] loss: 0.065
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 54 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 42 %
+Accuracy of   cat : 30 %
+Accuracy of  deer : 40 %
+Accuracy of   dog : 40 %
+Accuracy of  frog : 77 %
+Accuracy of horse : 75 %
+Accuracy of  ship : 72 %
+Accuracy of truck : 71 %
+
+real time:1351.03
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+ deer   cat horse truck
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.113
+[3,   200] loss: 0.110
+[4,   100] loss: 0.103
+[4,   200] loss: 0.099
+[5,   100] loss: 0.095
+[5,   200] loss: 0.093
+[6,   100] loss: 0.090
+[6,   200] loss: 0.089
+[7,   100] loss: 0.086
+[7,   200] loss: 0.084
+[8,   100] loss: 0.083
+[8,   200] loss: 0.081
+[9,   100] loss: 0.080
+[9,   200] loss: 0.080
+[10,   100] loss: 0.078
+[10,   200] loss: 0.078
+[11,   100] loss: 0.076
+[11,   200] loss: 0.076
+[12,   100] loss: 0.075
+[12,   200] loss: 0.074
+[13,   100] loss: 0.073
+[13,   200] loss: 0.072
+[14,   100] loss: 0.071
+[14,   200] loss: 0.071
+[15,   100] loss: 0.070
+[15,   200] loss: 0.069
+[16,   100] loss: 0.069
+[16,   200] loss: 0.068
+[17,   100] loss: 0.068
+[17,   200] loss: 0.067
+[18,   100] loss: 0.066
+[18,   200] loss: 0.066
+[19,   100] loss: 0.065
+[19,   200] loss: 0.065
+[20,   100] loss: 0.064
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship plane
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 53 %
+
+Class Accuracy
+
+Accuracy of plane : 63 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 31 %
+Accuracy of   cat : 30 %
+Accuracy of  deer : 29 %
+Accuracy of   dog : 60 %
+Accuracy of  frog : 77 %
+Accuracy of horse : 68 %
+Accuracy of  ship : 64 %
+Accuracy of truck : 71 %
+
+real time:1380.67
+Calculations done with cpu
+
+Loading in Datasets
+
+Batch Size: 200
+Files already downloaded and verified
+Files already downloaded and verified
+
+Viewing Random Training Images
+
+  car  bird horse   cat
+
+Creating Neural Network
+
+
+Create Loss function and optimizer
+
+
+Training Network
+
+[1,   100] loss: 0.115
+[1,   200] loss: 0.115
+[2,   100] loss: 0.115
+[2,   200] loss: 0.114
+[3,   100] loss: 0.113
+[3,   200] loss: 0.112
+[4,   100] loss: 0.105
+[4,   200] loss: 0.101
+[5,   100] loss: 0.097
+[5,   200] loss: 0.096
+[6,   100] loss: 0.093
+[6,   200] loss: 0.092
+[7,   100] loss: 0.089
+[7,   200] loss: 0.088
+[8,   100] loss: 0.085
+[8,   200] loss: 0.084
+[9,   100] loss: 0.082
+[9,   200] loss: 0.081
+[10,   100] loss: 0.080
+[10,   200] loss: 0.079
+[11,   100] loss: 0.078
+[11,   200] loss: 0.077
+[12,   100] loss: 0.076
+[12,   200] loss: 0.075
+[13,   100] loss: 0.074
+[13,   200] loss: 0.074
+[14,   100] loss: 0.073
+[14,   200] loss: 0.073
+[15,   100] loss: 0.071
+[15,   200] loss: 0.071
+[16,   100] loss: 0.070
+[16,   200] loss: 0.070
+[17,   100] loss: 0.069
+[17,   200] loss: 0.068
+[18,   100] loss: 0.067
+[18,   200] loss: 0.066
+[19,   100] loss: 0.066
+[19,   200] loss: 0.066
+[20,   100] loss: 0.065
+[20,   200] loss: 0.064
+
+Finished Training
+
+
+Save trained Model
+
+
+Test the network
+
+Test on Some test images
+GroundTruth:    cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+
+ Test on all images
+Accuracy of the network on the 10000 test images: 54 %
+
+Class Accuracy
+
+Accuracy of plane : 59 %
+Accuracy of   car : 70 %
+Accuracy of  bird : 36 %
+Accuracy of   cat : 34 %
+Accuracy of  deer : 37 %
+Accuracy of   dog : 40 %
+Accuracy of  frog : 63 %
+Accuracy of horse : 68 %
+Accuracy of  ship : 68 %
+Accuracy of truck : 78 %
+
+real time:1464.17
