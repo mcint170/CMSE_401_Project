@@ -14,6 +14,18 @@ Since there is quite a bit of information I decieded to keep that sepearte from 
 * Anconda 3 with python 3.8 installed
 * `pytorch_classifier` enviroment created
 
+## Folder structure
+
+* `outputs/` : Folder containing the `.png` and `.pth` outputs from the model.
+* `timing/`  : Folder containing the output from the timing scripts. The `cpu.txt`,
+`single.txt`, and `mutli_4.txt` contain the results of the average time per batch size 
+as well as average accuracy score.
+* `README.md` : This file
+* `{Version}_classifier.py` : The python script to run the version of the model.
+* `{Version}_classifier.sb` : The submission script to run the timing study on
+the version of the model
+* `makefile` : Used to make a shortcut to run a test for each model type.  
+
 ## Module Setup
 
 In order to run the code without job submission, it is suggested to use a
